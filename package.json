@@ -1,0 +1,12 @@
+{
+  "name": "5kazo4nik-jsfe2023q1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch shelter/sass/main.scss shelter/sass/main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

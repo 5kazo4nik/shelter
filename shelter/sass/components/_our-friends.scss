@@ -1,0 +1,76 @@
+.our-friends {
+  background-color: $color-light-l;
+}
+
+.our-friends__content {
+  padding: 80px 0 100px 0;
+  width: 1200px;
+}
+
+.our-friends__heading {
+  margin: 0 auto 60px auto;
+  text-align: center;
+  color: $color-dark-l;
+  width: 400px;
+  white-space: pre-line;
+}
+
+.our-friends__carousel {
+  margin-bottom: 60px;
+}
+
+.carousel {
+  @include content-flex();
+}
+
+.arrow-prev {
+  @extend %transition;
+  @include btn($padding: 21px 17px);
+}
+
+.arrow-next {
+  @extend %transition;
+  @include btn($padding: 21px 17px);
+}
+
+.our-friends__cards {
+  @include content-flex(1200px-210px, $align: normal);
+}
+
+.our-friends__card {
+  width: 270px;
+  height: 435px;
+  text-align: center;
+  background-color: $color-light-s;
+  * {
+    padding-bottom: 30px;
+  }
+}
+
+.our-friends__img {
+  width: 270px;
+  height: 270px;
+}
+
+.our-friends__name {
+  color: $color-dark-l;
+  margin: 0;
+}
+
+.card__button {
+  box-sizing: border-box;
+  width: 187px;
+  height: 52px;
+  border: 2px solid $color-primery;
+  padding: 0;
+  background-color: transparent;
+  color: $color-dark-3xl;
+  @include font(1.7rem, 22.1px);
+}
+
+.our-friends__button {
+  width: 261px;
+  height: 51px;
+  margin: auto;
+  background-color: $color-primery;
+}

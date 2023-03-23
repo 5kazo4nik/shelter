@@ -5,19 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
+  <link href="../sass/main.css" rel="stylesheet">
   <title>Main</title>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header-main">
     <div class="wrapper header__wrapper">
       <div class="header__content">
         <div class="header__logo">
-          <h2><a href="">Cozy House</a></h2>
+          <h1><a href="">Cozy House</a></h1>
           <p>Shelter for pets in Boston</p>
         </div>
-        <nav class="header__navigation">
-          <ul class="navigation">
+        <nav class="navigation">
+          <ul class="navigation__list">
             <li class="navigation__item"><a href="">About the shelter</a></li>
             <li class="navigation__item"><a href="">Our pets</a></li>
             <li class="navigation__item"><a href="">Help the shelter</a></li>
@@ -28,17 +29,18 @@
     </div>
     <section class="not-only">
       <div class="wrapper not-only__wrapper">
-        <div class="not-onlycontent">
+        <div class="not-only__content">
           <div class="not-only__text">
-            <h1 class="not-only__heading">Not only people need a House</h1>
-            <p class="not-only__text">We offer to give a chance to a little and nice puppy with an extremely wide and
+            <h2 class="not-only__heading">Not only people need a House</h2>
+            <p class="not-only__description">We offer to give a chance to a little and nice puppy with an extremely wide
+              and
               open
               heart. He or she will love you more than anybody else in the world, you will see!</p>
             <div class="button not-only__button">
               <a href="">Make a friend</a>
             </div>
           </div>
-          <div class="notonly__img"></div>
+          <div class="not-only__img"></div>
         </div>
       </div>
     </section>
@@ -51,9 +53,9 @@
         <div class="about__content">
           <div class="about__img"></div>
           <div class="about__text">
-            <h2 class="about__heading">
+            <h3 class="about__heading">
               About the shelter “Cozy House”
-            </h2>
+            </h3>
             <p>
               Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a
               family. The others will continue to live with us and will be waiting for a lucky chance to become dearly
@@ -74,30 +76,30 @@
     <section class="our-friends">
       <div class="wrapper our-friends__wrapper">
         <div class="our-friends__content">
-          <h2 class="our-friends__heading">
+          <h3 class="our-friends__heading">
             Our friends who
             are looking for a house
-          </h2>
+          </h3>
           <div class="our-friends__carousel carousel">
-            <div class="carousel__card">
-              <div class="carousel__img"></div>
-              <h4 class="carousel__name">Katrine</h4>
-              <div class="carousel__button">Learn more</div>
+            <div class="arrow-prev"></div>
+            <div class="our-friends__cards">
+              <div class="our-friends__card">
+                <div class="our-friends__img"><img src="../assets/img/pets-katrine.png" alt="cat"></div>
+                <h4 class="our-friends__name">Katrine</h4>
+                <button class="card__button button">Learn more</button>
+              </div>
+              <div class="our-friends__card">
+                <div class="our-friends__img"><img src="../assets/img/pets-jennifer.png" alt="dog"></div>
+                <h4 class="our-friends__name">Jennifer</h4>
+                <button class="card__button button">Learn more</button>
+              </div>
+              <div class="our-friends__card">
+                <div class="our-friends__img"><img src="../assets/img/pets-woody.png" alt="dog"></div>
+                <h4 class="our-friends__name">Woody</h4>
+                <button class="card__button button">Learn more</button>
+              </div>
             </div>
-          </div>
-          <div class="our-friends__carousel carousel">
-            <div class="carousel__card">
-              <div class="carousel__img"></div>
-              <h4 class="carousel__name">Jennifer</h4>
-              <div class="carousel__button">Learn more</div>
-            </div>
-          </div>
-          <div class="our-friends__carousel carousel">
-            <div class="carousel__card">
-              <div class="carousel__img"></div>
-              <h4 class="carousel__name">Woody</h4>
-              <div class="carousel__button">Learn more</div>
-            </div>
+            <div class="arrow-next"></div>
           </div>
           <div class="our-friends__button button">
             <a href="">Get to know the rest</a>
@@ -109,44 +111,44 @@
     <section class="help">
       <div class="wrapper help__wrapper">
         <div class="help__content">
-          <h2 class="help__heading">How you can help
-            our shelter</h2>
+          <h3 class="help__heading">How you can help
+            our shelter</h3>
           <div class="help__items">
             <div class="help__item">
-              <div class="help__img"></div>
-              <p class="help__text">Pet food</p>
+              <div class="help__img"><img src="../assets/svg/Vector.svg" alt="food"></div>
+              <h4 class="help__text">Pet food</h4>
             </div>
             <div class="help__item">
-              <div class="help__img"></div>
-              <p class="help__text">Transportation</p>
+              <div class="help__img"><img src="../assets/svg/transportation.svg" alt="transport"></div>
+              <h4 class="help__text">Transportation</h4>
             </div>
             <div class="help__item">
-              <div class="help__img"></div>
-              <p class="help__text">Toys</p>
+              <div class="help__img"><img src="../assets/svg/toys.svg" alt="toys"></div>
+              <h4 class="help__text">Toys</h4>
             </div>
             <div class="help__item">
-              <div class="help__img"></div>
-              <p class="help__text">Bowls and cups</p>
+              <div class="help__img"><img src="../assets/svg/bowls-and-cups.svg" alt="bowls"></div>
+              <h4 class="help__text">Bowls and cups</h4>
             </div>
             <div class="help__item">
-              <div class="help__img"></div>
-              <p class="help__text">Shampoos</p>
+              <div class="help__img"><img src="../assets/svg/shampoos.svg" alt="shampoos"></div>
+              <h4 class="help__text">Shampoos</h4>
             </div>
             <div class="help__item">
-              <div class="help__img"></div>
-              <p class="help__text">Vitamins</p>
+              <div class="help__img"><img src="../assets/svg/medicines.svg" alt="vitamins"></div>
+              <h4 class="help__text">Vitamins</h4>
             </div>
             <div class="help__item">
-              <div class="help__img"></div>
-              <p class="help__text">Medicines</p>
+              <div class="help__img"><img src="../assets/svg/medicines.svg" alt="meds"></div>
+              <h4 class="help__text">Medicines</h4>
             </div>
             <div class="help__item">
-              <div class="help__img"></div>
-              <p class="help__text">Collars / leashes</p>
+              <div class="help__img"><img src="../assets/svg/collars-or-leashes.svg" alt="collars"></div>
+              <h4 class="help__text">Collars / leashes</h4>
             </div>
             <div class="help__item">
-              <div class="help__img"></div>
-              <p class="help__text">Sleeping areas</p>
+              <div class="help__img"><img src="../assets/svg/sleeping-area.svg" alt="areas"></div>
+              <h4 class="help__text">Sleeping areas</h4>
             </div>
           </div>
         </div>
@@ -158,7 +160,7 @@
         <div class="addition__content">
           <div class="addition__img"></div>
           <div class="addition__text">
-            <h2 class="addition__heading">You can also make a donation</h2>
+            <h3 class="addition__heading">You can also make a donation</h3>
             <p>Name of the bank / Type of bank account</p>
             <div class="addition__link"><img src="" alt="card"><a href="">8380 2880 8028 8791 7435</a></div>
             <p class="addition__information">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing
@@ -174,7 +176,7 @@
     <div class="wrapper footer__wrapper">
       <div class="footer__content">
         <div class="footer__connection connection">
-          <h2 class="footer__heading">For questions and suggestions</h2>
+          <h3 class="footer__heading">For questions and suggestions</h3>
           <div class="connection__links">
             <a href="mailto:email@shelter.com" class="connection__img connection__tel"></a>
             <a href="mailto:email@shelter.com" class="connection__text">email@shelter.com</a>
@@ -185,7 +187,7 @@
           </div>
         </div>
         <div class="footer__connection connection">
-          <h2 class="footer__heading">We are waiting for your visit</h2>
+          <h3 class="footer__heading">We are waiting for your visit</h3>
           <div class="connection__links">
             <a href="https://www.google.ru/maps/place/%D0%9A%D1%83%D1%80%D0%BB%D1%8B%D0%BA/@47.1145674,61.0605082,11.25z/data=!4m14!1m7!3m6!1s0x418c7657bf5ccceb:0x66c0ce0b9f4fd0e9!2z0JrRg9GA0LvRi9C6!8m2!3d47.11827!4d61.07176!16s%2Fg%2F11f6mq9_jx!3m5!1s0x418c7657bf5ccceb:0x66c0ce0b9f4fd0e9!8m2!3d47.11827!4d61.07176!16s%2Fg%2F11f6mq9_jx"
               class="connection__img connection__map"></a>

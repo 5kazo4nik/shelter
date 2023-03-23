@@ -1,0 +1,41 @@
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+body {
+  @extend %font-arial;
+  @include font(1.5rem, 24px);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  @extend %font-georgia;
+  @include font(3.2rem, 35.2px);
+}
+
+h2 {
+  @extend %font-georgia;
+  @include font(4.4rem, 57.2px);
+}
+
+h3 {
+  @extend %font-georgia;
+  @include font(3.5rem, 45.5px);
+}
+
+h4 {
+  @extend %font-georgia;
+  @include font(2rem, 23px);
+}
+
+h5 {
+  @extend %font-georgia;
+  @include font(1.5rem, 16.5px);
+}

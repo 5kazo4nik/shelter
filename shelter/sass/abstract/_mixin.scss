@@ -1,0 +1,24 @@
+@mixin font($size, $height: $size, $weight: 400, $style: normal) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin content-flex($width: 1200px, $justify: space-between, $align: center, $direction: row) {
+  width: $width;
+  display: flex;
+  justify-content: space-between;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin btn($border: 2px solid $color-primery, $padding) {
+  background-repeat: no-repeat;
+  background-position: center;
+  border: $border;
+  padding: $padding;
+  border-radius: 100px;
+  cursor: pointer;
+  // box-sizing: border-box;
+}

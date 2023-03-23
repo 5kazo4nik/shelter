@@ -1,0 +1,12 @@
+.arrow-prev {
+  width: 14px;
+  height: 6px;
+  background-image: url(../assets/icons/arrow.svg);
+}
+
+.arrow-next {
+  width: 14px;
+  height: 6px;
+  background-image: url(../assets/icons/arrow.svg);
+  transform: rotate(180deg);
+}

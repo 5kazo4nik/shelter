@@ -1,0 +1,28 @@
+.about__content {
+  @include content-flex(300px+120px+430px);
+  margin: 0 auto;
+  padding: 80px 0 100px 0;
+}
+
+.about__img {
+  width: 300px;
+  min-height: 408px;
+  background-image: url(../assets/img/about-pets.png);
+  background-size: cover;
+}
+
+.about__text {
+  min-height: 380px;
+  @include content-flex(430px, $direction: column, $align: start);
+}
+
+.about__text h3 {
+  color: $color-dark-l;
+  max-width: 350px;
+  margin: 0;
+}
+
+.about__text p {
+  margin: 0;
+  color: $color-dark-xl;
+}

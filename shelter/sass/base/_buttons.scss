@@ -1,0 +1,14 @@
+.button {
+  border-radius: 100px;
+  color: $color-dark-3xl;
+  text-align: center;
+  @extend %transition;
+  @extend %font-georgia;
+
+  a {
+    display: block;
+    padding: 15px 45px;
+    @include font(1.7rem, 22.1px);
+    @extend %font-georgia;
+  }
+}

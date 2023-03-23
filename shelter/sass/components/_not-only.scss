@@ -1,0 +1,35 @@
+.not-only__content {
+  @include content-flex(1200px, $align: start);
+  margin: auto;
+  padding-top: 60px;
+}
+
+.not-only__text {
+  @include content-flex(460px, $direction: column, $align: normal);
+  min-height: 322px;
+  padding-top: 163px;
+}
+
+.not-only__heading {
+  max-width: 310px;
+  color: $color-light-xl;
+  margin: 0;
+}
+
+.not-only__description {
+  color: $color-dark-s;
+  margin: 0;
+}
+
+.not-only__button {
+  background-color: $color-primery;
+  width: 207px;
+  height: 52px;
+}
+
+.not-only__img {
+  width: 698px;
+  min-height: 728px;
+  background-image: url(../assets/img/start-screen-puppy.png);
+  background-size: cover;
+}

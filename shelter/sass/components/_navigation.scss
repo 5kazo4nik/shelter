@@ -1,0 +1,42 @@
+.navigation__list {
+  text-decoration: none;
+  display: flex;
+}
+
+.navigation__item {
+  position: relative;
+  margin-right: 35px;
+  color: $color-dark-s;
+  @extend %transition;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: '';
+    @extend %transition;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 3px;
+    width: 0%;
+    background-color: $color-primery;
+  }
+
+  &:hover {
+    color: $color-light-s;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes border {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
