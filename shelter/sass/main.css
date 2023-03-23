@@ -719,7 +719,7 @@ h5 {
 .help__items {
   width: 1026px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: normal;
   flex-direction: row;
   width: 1026px;
@@ -798,7 +798,7 @@ h5 {
 .addition__links {
   width: 349px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   height: 43px;
@@ -859,4 +859,76 @@ h5 {
   font-style: normal;
   margin: 0;
   letter-spacing: 1.3px;
+}
+
+.footer {
+  background: url(../assets/svg/noise_transparent@2x.svg), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+}
+
+.footer__content {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  flex-direction: row;
+  margin: auto;
+  padding: 40px 0 0 0;
+}
+
+.footer__connection {
+  flex-basis: 278px;
+  height: 234px;
+  margin: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footer__heading {
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.connection__links {
+  width: auto;
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  flex-direction: row;
+}
+
+.connection__img {
+  height: 32px;
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.connection__tel {
+  width: 40px;
+  background-image: url(../assets/icons/icon-phone.svg);
+}
+
+.connection__email {
+  width: 40px;
+  background-image: url(../assets/icons/icon-email.svg);
+}
+
+.connection__map {
+  width: 22px;
+  background-image: url(../assets/icons/pin.svg);
+}
+
+.connection__text {
+  color: #f1cdb3;
+  margin: 0;
+}
+
+.footer__img {
+  width: 300px;
+  height: 310px;
+  background-image: url(../assets/img/footer-puppy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */

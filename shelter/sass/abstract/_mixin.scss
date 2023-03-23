@@ -8,7 +8,7 @@
 @mixin content-flex($width: 1200px, $justify: space-between, $align: center, $direction: row) {
   width: $width;
   display: flex;
-  justify-content: space-between;
+  justify-content: $justify;
   align-items: $align;
   flex-direction: $direction;
 }
