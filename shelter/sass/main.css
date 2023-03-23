@@ -401,11 +401,11 @@ ul {
   transition: all 0.5s ease-in-out;
 }
 
-body {
+.addition__p2, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.button a, .button, h5, h4, h3, h2, h1 {
+.addition__p1, .button a, .button, h5, h4, h3, h2, h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -743,6 +743,84 @@ h5 {
 .help__img img {
   display: block;
   margin: auto;
+}
+
+.addition {
+  background-color: #f6f6f6;
+}
+
+.addition__content {
+  width: 915px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  padding: 80px 0 100px 0;
+}
+
+.addition__img {
+  flex-basis: 505px;
+  height: 261px;
+  background-image: url(../assets/img/donation-dog.png);
+  background-size: cover;
+}
+
+.addition__text {
+  flex-basis: 380px;
+}
+
+.addition__heading {
+  width: 300px;
+  color: #545454;
+  white-space: pre-line;
+  margin: 0 0 20px 0;
+}
+
+.addition__p1 {
+  font-size: 1.5rem;
+  line-height: 16.5px;
+  font-weight: 400;
+  font-style: normal;
+  color: #545454;
+  margin: 0 0 20px 0;
+}
+
+.addition__p2 {
+  font-size: 1.2rem;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: #b2b2b2;
+  margin: 0;
+}
+
+.addition__links {
+  width: 349px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 43px;
+  background-color: #f1cdb3;
+  border-radius: 9px;
+  margin: 0 0 20px 0;
+}
+
+.addition__number {
+  margin: 0;
+  padding: 0 15px 0 0;
+  color: #545454;
+  letter-spacing: 1.1px;
+}
+
+.addition__card {
+  background-image: url(../assets/icons/credit-card.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 23px;
+  padding: 0 15px;
 }
 
 .wrapper {

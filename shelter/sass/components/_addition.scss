@@ -1,0 +1,65 @@
+.addition {
+  background-color: $color-light-l;
+}
+
+.addition__content {
+  @include content-flex(915px);
+  margin: auto;
+  padding: 80px 0 100px 0;
+}
+
+.addition__img {
+  flex-basis: 505px;
+  height: 261px;
+  background-image: url(../assets/img/donation-dog.png);
+  background-size: cover;
+}
+
+.addition__text {
+  flex-basis: 380px;
+}
+
+.addition__heading {
+  width: 300px;
+  color: $color-dark-l;
+  white-space: pre-line;
+  margin: 0 0 20px 0;
+}
+
+.addition__p1 {
+  @extend %font-georgia;
+  @include font(1.5rem, 16.5px);
+  color: $color-dark-l;
+  margin: 0 0 20px 0;
+}
+
+.addition__p2 {
+  @extend %font-arial;
+  @include font(1.2rem, 18px, 400, italic);
+  color: $color-dark-m;
+  margin: 0;
+}
+
+.addition__links {
+  @include content-flex(349px, $justify: space-around);
+  height: 43px;
+  background-color: $color-primery;
+  border-radius: 9px;
+  margin: 0 0 20px 0;
+}
+
+.addition__number {
+  margin: 0;
+  padding: 0 15px 0 0;
+  color: $color-dark-l;
+  letter-spacing: 1.1px;
+}
+
+.addition__card {
+  background-image: url(../assets/icons/credit-card.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 23px;
+  padding: 0 15px;
+}
