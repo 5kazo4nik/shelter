@@ -397,15 +397,15 @@ ul {
   list-style: none;
 }
 
-.addition__links, .our-friends__card, .navigation__item, .btn, .button {
+.our-friends__card, .navigation__item, .btn, .button {
   transition: all 0.5s ease-in-out;
 }
 
-.addition__p2, body {
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.addition__p1, .btn, .button a, .button, h5, h4, h3, h2, h1 {
+.btn, .button a, .button, h5, h4, h3, h2, h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -560,87 +560,6 @@ h5 {
   width: 0%;
 }
 
-.not-only__content {
-  max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  flex-direction: row;
-  margin: auto;
-  padding-top: 60px;
-}
-
-.not-only__text {
-  max-width: 460px;
-  display: flex;
-  justify-content: space-between;
-  align-items: normal;
-  flex-direction: column;
-  min-height: 322px;
-  padding-top: 163px;
-}
-
-.not-only__heading {
-  max-width: 310px;
-  color: #ffffff;
-  margin: 0;
-}
-
-.not-only__description {
-  color: #cdcdcd;
-  margin: 0;
-}
-
-.not-only__button {
-  background-color: #f1cdb3;
-  width: 207px;
-  height: 52px;
-}
-
-.not-only__img {
-  width: 698px;
-  min-height: 728px;
-  background-image: url(../assets/img/start-screen-puppy.png);
-  background-size: cover;
-}
-
-.about__content {
-  max-width: 850px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin: 0 auto;
-  padding: 80px 0 100px 0;
-}
-
-.about__img {
-  width: 300px;
-  min-height: 408px;
-  background-image: url(../assets/img/about-pets.png);
-  background-size: cover;
-}
-
-.about__text {
-  min-height: 380px;
-  max-width: 430px;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  flex-direction: column;
-}
-
-.about__text h3 {
-  color: #545454;
-  max-width: 350px;
-  margin: 0;
-}
-
-.about__text p {
-  margin: 0;
-  color: #4c4c4c;
-}
-
 .our-friends {
   background-color: #f6f6f6;
 }
@@ -749,136 +668,6 @@ h5 {
   background-color: #f1cdb3;
 }
 
-.help__content {
-  max-width: 1200px;
-  padding: 80px 0 100px 0;
-}
-
-.help__heading {
-  width: 308px;
-  margin: 0 auto 60px auto;
-  color: #545454;
-  text-align: center;
-}
-
-.help__items {
-  max-width: 1026px;
-  display: flex;
-  justify-content: space-around;
-  align-items: normal;
-  flex-direction: row;
-  max-width: 1026px;
-  justify-content: center;
-  flex-wrap: wrap;
-  -moz-column-gap: 120px;
-       column-gap: 120px;
-  row-gap: 55px;
-  margin: auto;
-}
-
-.help__text {
-  color: #545454;
-  margin: 0;
-  text-align: center;
-}
-
-.help__img {
-  margin: 0 auto 30px auto;
-}
-.help__img img {
-  display: block;
-  margin: auto;
-}
-
-.addition {
-  background-color: #f6f6f6;
-}
-
-.addition__content {
-  max-width: 915px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin: auto;
-  padding: 80px 0 100px 0;
-}
-
-.addition__img {
-  flex-basis: 505px;
-  height: 261px;
-  background-image: url(../assets/img/donation-dog.png);
-  background-size: cover;
-}
-
-.addition__text {
-  flex-basis: 380px;
-}
-
-.addition__heading {
-  width: 300px;
-  color: #545454;
-  white-space: pre-line;
-  margin: 0 0 20px 0;
-}
-
-.addition__p1 {
-  font-size: 1.5rem;
-  line-height: 16.5px;
-  font-weight: 400;
-  font-style: normal;
-  color: #545454;
-  margin: 0 0 20px 0;
-}
-
-.addition__p2 {
-  font-size: 1.2rem;
-  line-height: 18px;
-  font-weight: 400;
-  font-style: italic;
-  color: #b2b2b2;
-  margin: 0;
-}
-
-.addition__links {
-  max-width: 349px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  height: 43px;
-  background-color: #f1cdb3;
-  border-radius: 9px;
-  margin: 0 0 20px 0;
-}
-.addition__links:hover {
-  background-color: #fddcc4;
-}
-.addition__links:active {
-  background-color: #f1cdb3;
-}
-
-.addition__number {
-  margin: 0;
-  padding: 0 15px 0 0;
-  color: #545454;
-  letter-spacing: 1.1px;
-}
-
-.addition__card {
-  background-image: url(../assets/icons/credit-card.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 30px;
-  height: 23px;
-  padding: 0 15px;
-}
-
-.wrapper {
-  max-width: 1280px;
-  margin: auto;
-}
-
 .header-main {
   background: url(../assets/svg/noise_transparent@2x.svg), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
 }
@@ -909,6 +698,11 @@ h5 {
   margin: 0;
   letter-spacing: 1.1px;
   text-align: center;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
 }
 
 .footer {
@@ -982,4 +776,96 @@ h5 {
   background-image: url(../assets/img/footer-puppy.png);
   background-repeat: no-repeat;
   background-size: cover;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.header__logo h1 {
+  margin: 0 0 10px 0;
+  letter-spacing: 1.5px;
+  color: #545454;
+}
+.header__logo p {
+  font-size: 1.3rem;
+  line-height: 14.95px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  color: #292929;
+}
+
+.navigation__item {
+  color: #545454;
+}
+.navigation__item:first-child {
+  color: #545454;
+  cursor: pointer;
+}
+.navigation__item:last-child {
+  margin-right: 0;
+}
+.navigation__item:hover {
+  color: #292929;
+}
+.navigation__item:nth-child(2) {
+  color: #292929;
+  cursor: default;
+}
+.navigation__item:nth-child(2):active:before {
+  width: 0%;
+}
+.navigation__item:first-child:active:before {
+  width: 100%;
+}
+
+.our-friends__heading {
+  margin: 0 auto 45px auto;
+}
+
+.our-friends__list {
+  margin-bottom: 45px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.our-friends__buttons {
+  margin: auto;
+  max-width: 340px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.buttons__item {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons__item h4 {
+  margin: 0;
+}
+.buttons__item:nth-child(3) {
+  background-color: #f1cdb3;
+}
+.buttons__item:nth-child(3):hover {
+  background-color: #fddcc4;
+}
+.buttons__item:nth-child(3):active {
+  background-color: #f1cdb3;
+}
+.buttons__item:nth-child(4), .buttons__item:nth-child(5) {
+  transform: rotate(180deg);
+}
+
+.our-friends__buttons .btn .svg-long {
+  fill: red;
+}
+.our-friends__buttons .btn_inactive .svg-long {
+  fill: blue;
+}/*# sourceMappingURL=pets.css.map */

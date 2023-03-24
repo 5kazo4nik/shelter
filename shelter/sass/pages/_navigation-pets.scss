@@ -1,0 +1,32 @@
+.navigation__item {
+  color: $color-dark-l;
+  &:first-child {
+    color: $color-dark-l;
+    cursor: pointer;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $color-dark-3xl;
+  }
+
+  &:nth-child(2) {
+    color: $color-dark-3xl;
+    cursor: default;
+  }
+
+  &:nth-child(2):active {
+    &:before {
+      width: 0%;
+    }
+  }
+
+  &:first-child:active {
+    &:before {
+      width: 100%;
+    }
+  }
+}

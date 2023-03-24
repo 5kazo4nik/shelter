@@ -2,6 +2,7 @@
   border-radius: 100px;
   color: $color-dark-3xl;
   text-align: center;
+  cursor: pointer;
   @extend %transition;
   @extend %font-georgia;
 
@@ -26,6 +27,8 @@
   text-align: center;
   @extend %transition;
   @extend %font-georgia;
+  border: 2px solid $color-primery;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-primery-light;
@@ -34,5 +37,17 @@
   &:active {
     background-color: $color-primery;
     border: 2px solid $color-primery;
+  }
+
+  &_inactive {
+    background-color: transparent;
+    border: 2px solid $color-dark-s;
+    cursor: default;
+
+    &:hover,
+    &active {
+      background-color: transparent;
+      border: 2px solid $color-dark-s;
+    }
   }
 }

@@ -1,0 +1,67 @@
+.our-friends__heading {
+  margin: 0 auto 45px auto;
+}
+
+.our-friends__list {
+  margin-bottom: 45px;
+  @include content-flex(1200px, $align: normal);
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.our-friends__buttons {
+  margin: auto;
+  @include content-flex(340px);
+}
+
+.buttons__item {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h4 {
+    margin: 0;
+  }
+
+  &:nth-child(3) {
+    background-color: $color-primery;
+    &:hover {
+      background-color: $color-primery-light;
+    }
+    &:active {
+      background-color: $color-primery;
+    }
+  }
+
+  &:nth-child(4),
+  &:nth-child(5) {
+    transform: rotate(180deg);
+  }
+
+  // .btn {
+  //   fill: $color-dark-3xl;
+  // }
+
+  // img {
+  //   color: $color-dark-xl;
+  // }
+}
+
+.our-friends__buttons {
+  .btn {
+    .svg-long {
+      fill: red;
+    }
+    // fill: $color-dark-3xl;
+    // fill: red;
+  }
+  .btn_inactive {
+    .svg-long {
+      fill: blue;
+    }
+  }
+}
+// .svg-long {
+//   fill: blue;
+// }

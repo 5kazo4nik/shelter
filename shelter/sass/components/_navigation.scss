@@ -20,7 +20,7 @@
 
   &::before {
     content: '';
-    @extend %transition;
+    transition: 0.2s;
     position: absolute;
     left: 0%;
     bottom: 0%;
@@ -45,14 +45,5 @@
     &:before {
       width: 0%;
     }
-  }
-}
-
-@keyframes border {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
   }
 }

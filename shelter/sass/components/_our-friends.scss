@@ -8,11 +8,11 @@
 }
 
 .our-friends__heading {
+  width: fit-content;
   margin: 0 auto 60px auto;
   text-align: center;
   color: $color-dark-l;
-  width: 400px;
-  white-space: pre-line;
+  // white-space: pre-line;
 }
 
 .our-friends__carousel {
@@ -24,12 +24,10 @@
 }
 
 .arrow-prev {
-  @extend %transition;
   @include btn($padding: 21px 17px);
 }
 
 .arrow-next {
-  @extend %transition;
   @include btn($padding: 21px 17px);
 }
 
@@ -42,6 +40,7 @@
 .our-friends__card {
   max-width: 270px;
   min-height: 435px;
+  border-radius: 9px;
   text-align: center;
   background-color: $color-light-s;
   cursor: pointer;
