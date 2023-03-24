@@ -9,6 +9,11 @@
   color: $color-dark-s;
   @extend %transition;
 
+  &:first-child {
+    color: $color-light-s;
+    cursor: default;
+  }
+
   &:last-child {
     margin-right: 0;
   }
@@ -26,8 +31,19 @@
 
   &:hover {
     color: $color-light-s;
+    // &:before {
+    //   width: 100%;
+    // }
+  }
+
+  &:active {
     &:before {
       width: 100%;
+    }
+  }
+  &:first-child:active {
+    &:before {
+      width: 0%;
     }
   }
 }

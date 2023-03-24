@@ -4,7 +4,7 @@
 
 .our-friends__content {
   padding: 80px 0 100px 0;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .our-friends__heading {
@@ -35,21 +35,34 @@
 
 .our-friends__cards {
   @include content-flex(1200px-210px, $align: normal);
+  width: 990px;
+  flex-wrap: wrap;
 }
 
 .our-friends__card {
-  width: 270px;
-  height: 435px;
+  max-width: 270px;
+  min-height: 435px;
   text-align: center;
   background-color: $color-light-s;
+  cursor: pointer;
+  @extend %transition;
+  &:hover .btn {
+    background-color: $color-primery-light;
+    border: 2px solid $color-primery-light;
+  }
+  &:active .btn {
+    background-color: $color-primery;
+    border: 2px solid $color-primery;
+  }
+
   * {
     padding-bottom: 30px;
   }
 }
 
 .our-friends__img {
-  width: 270px;
-  height: 270px;
+  max-width: 270px;
+  min-height: 270px;
 }
 
 .our-friends__name {

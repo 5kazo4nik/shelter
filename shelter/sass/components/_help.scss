@@ -1,5 +1,5 @@
 .help__content {
-  width: 1200px;
+  max-width: 1200px;
   padding: 80px 0 100px 0;
 }
 
@@ -12,7 +12,7 @@
 
 .help__items {
   @include content-flex(1026px, $align: normal, $justify: space-around);
-  width: 1026px;
+  max-width: 1026px;
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 120px;

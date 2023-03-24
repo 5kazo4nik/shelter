@@ -11,4 +11,28 @@
     @include font(1.7rem, 22.1px);
     @extend %font-georgia;
   }
+
+  &:hover {
+    background-color: $color-primery-light;
+  }
+  &:active {
+    background-color: $color-primery;
+  }
+}
+
+.btn {
+  border-radius: 100px;
+  color: $color-dark-3xl;
+  text-align: center;
+  @extend %transition;
+  @extend %font-georgia;
+
+  &:hover {
+    background-color: $color-primery-light;
+    border: 2px solid $color-primery-light;
+  }
+  &:active {
+    background-color: $color-primery;
+    border: 2px solid $color-primery;
+  }
 }

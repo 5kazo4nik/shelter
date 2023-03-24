@@ -46,6 +46,13 @@
   background-color: $color-primery;
   border-radius: 9px;
   margin: 0 0 20px 0;
+  @extend %transition;
+  &:hover {
+    background-color: $color-primery-light;
+  }
+  &:active {
+    background-color: $color-primery;
+  }
 }
 
 .addition__number {
