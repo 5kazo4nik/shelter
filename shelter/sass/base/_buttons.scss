@@ -5,6 +5,7 @@
   cursor: pointer;
   @extend %transition;
   @extend %font-georgia;
+  letter-spacing: 0.9px;
 
   a {
     display: block;
@@ -29,6 +30,7 @@
   @extend %font-georgia;
   border: 2px solid $color-primery;
   cursor: pointer;
+  letter-spacing: 1.2px;
 
   &:hover {
     background-color: $color-primery-light;

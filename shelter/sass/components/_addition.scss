@@ -24,6 +24,7 @@
   color: $color-dark-l;
   white-space: pre-line;
   margin: 0 0 20px 0;
+  letter-spacing: 2px;
 }
 
 .addition__p1 {
@@ -31,6 +32,7 @@
   @include font(1.5rem, 16.5px);
   color: $color-dark-l;
   margin: 0 0 20px 0;
+  letter-spacing: 0.9px;
 }
 
 .addition__p2 {

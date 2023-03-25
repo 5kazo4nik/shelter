@@ -11,21 +11,22 @@
 .footer__connection {
   flex-basis: 278px;
   height: 234px;
-  margin: 16px;
+  margin-top: 16px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  &:nth-child(2) {
+    flex-basis: 302px;
+  }
 }
 
 .footer__heading {
   color: $color-light-xl;
-  // margin: 0 0 40px 0;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.9px;
   margin: 0;
 }
 
 .connection__links {
-  // margin: 0 0 40px 0;
   @include content-flex(auto, $justify: normal);
 }
 
@@ -52,9 +53,12 @@
 }
 
 .connection__text {
-  width: 260px;
+  max-width: 260px;
   color: $color-primery;
   margin: 0;
+  a {
+    letter-spacing: 1.2px;
+  }
 }
 
 .footer__img {

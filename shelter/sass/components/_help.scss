@@ -1,6 +1,7 @@
 .help__content {
   max-width: 1200px;
   padding: 80px 0 100px 0;
+  margin: auto;
 }
 
 .help__heading {
@@ -8,11 +9,12 @@
   margin: 0 auto 60px auto;
   color: $color-dark-l;
   text-align: center;
+  letter-spacing: 1.8px;
 }
 
 .help__items {
   @include content-flex(1026px, $align: normal, $justify: space-around);
-  max-width: 1026px;
+  // width: 1026px;
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 120px;
@@ -24,12 +26,13 @@
   color: $color-dark-l;
   margin: 0;
   text-align: center;
+  letter-spacing: 1.1px;
 }
 
 .help__img {
   margin: 0 auto 30px auto;
-  img {
-    display: block;
-    margin: auto;
-  }
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

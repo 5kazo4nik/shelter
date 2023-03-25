@@ -5,6 +5,7 @@
 .our-friends__content {
   padding: 80px 0 100px 0;
   max-width: 1200px;
+  margin: 0 auto 0 auto;
 }
 
 .our-friends__heading {
@@ -12,6 +13,7 @@
   margin: 0 auto 60px auto;
   text-align: center;
   color: $color-dark-l;
+  letter-spacing: 2px;
   // white-space: pre-line;
 }
 
@@ -53,20 +55,19 @@
     background-color: $color-primery;
     border: 2px solid $color-primery;
   }
-
-  * {
-    padding-bottom: 30px;
-  }
 }
 
 .our-friends__img {
-  max-width: 270px;
-  min-height: 270px;
+  width: 270px;
+  height: 270px;
+  padding-bottom: 30px;
 }
 
 .our-friends__name {
   color: $color-dark-l;
   margin: 0;
+  padding-bottom: 30px;
+  letter-spacing: 1.2px;
 }
 
 .card__button {
@@ -78,6 +79,7 @@
   background-color: transparent;
   color: $color-dark-3xl;
   @include font(1.7rem, 22.1px);
+  letter-spacing: 1.2px;
 }
 
 .our-friends__button {

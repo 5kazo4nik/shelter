@@ -19,6 +19,7 @@ a {
 h1 {
   @extend %font-georgia;
   @include font(3.2rem, 35.2px);
+  // letter-spacing: 1.2px;
 }
 
 h2 {
@@ -29,14 +30,17 @@ h2 {
 h3 {
   @extend %font-georgia;
   @include font(3.5rem, 45.5px);
+  // letter-spacing: 1.2px;
 }
 
 h4 {
   @extend %font-georgia;
   @include font(2rem, 23px);
+  // letter-spacing: 1.2px;
 }
 
 h5 {
   @extend %font-georgia;
   @include font(1.5rem, 16.5px);
+  // letter-spacing: 1.2px;
 }
