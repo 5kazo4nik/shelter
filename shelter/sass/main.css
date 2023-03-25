@@ -512,19 +512,6 @@ h5 {
   border: 2px solid #cdcdcd;
 }
 
-.arrow-prev {
-  width: 14px;
-  height: 6px;
-  background-image: url(../assets/icons/arrow.svg);
-}
-
-.arrow-next {
-  width: 14px;
-  height: 6px;
-  background-image: url(../assets/icons/arrow.svg);
-  transform: rotate(180deg);
-}
-
 .navigation__list {
   text-decoration: none;
   display: flex;
@@ -757,6 +744,19 @@ h5 {
   height: 51px;
   margin: auto;
   background-color: #f1cdb3;
+}
+
+.arrow-prev {
+  width: 14px;
+  height: 6px;
+  background-image: url(../assets/icons/Arrow.svg);
+}
+
+.arrow-next {
+  width: 14px;
+  height: 6px;
+  background-image: url(../assets/icons/Arrow.svg);
+  transform: rotate(180deg);
 }
 
 .help__content {

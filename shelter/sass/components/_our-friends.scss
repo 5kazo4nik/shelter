@@ -88,3 +88,16 @@
   margin: auto;
   background-color: $color-primery;
 }
+
+.arrow-prev {
+  width: 14px;
+  height: 6px;
+  background-image: url(../assets/icons/Arrow.svg);
+}
+
+.arrow-next {
+  width: 14px;
+  height: 6px;
+  background-image: url(../assets/icons/Arrow.svg);
+  transform: rotate(180deg);
+}
