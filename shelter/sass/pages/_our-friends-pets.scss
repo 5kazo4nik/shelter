@@ -1,12 +1,30 @@
 .our-friends__heading {
   margin: 0 auto 60px auto;
+
+  @include media-tablet {
+    margin-bottom: 30px;
+  }
 }
 
 .our-friends__list {
-  margin-bottom: 60px;
   @include content-flex(1200px, $align: normal);
   flex-wrap: wrap;
   row-gap: 30px;
+  margin-bottom: 60px;
+
+  @include media-tablet {
+    max-width: 580px;
+    margin: 0 auto 40px auto;
+  }
+}
+
+.our-friends__card {
+  @include media-tablet {
+    &:nth-child(7),
+    &:nth-child(8) {
+      display: none;
+    }
+  }
 }
 
 .our-friends__buttons {
