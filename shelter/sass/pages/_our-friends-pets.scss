@@ -6,6 +6,14 @@
   }
 }
 
+.our-friends__content {
+  padding-bottom: 100px;
+
+  @include media-tablet {
+    padding-bottom: 75px;
+  }
+}
+
 .our-friends__list {
   @include content-flex(1200px, $align: normal);
   flex-wrap: wrap;

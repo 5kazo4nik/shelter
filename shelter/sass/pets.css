@@ -710,7 +710,7 @@ h5 {
 }
 .header__logo h1 {
   margin: 0 0 10px 0;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.8px;
   color: #f1cdb3;
 }
 .header__logo p {
@@ -719,7 +719,7 @@ h5 {
   font-weight: 400;
   font-style: normal;
   margin: 0;
-  letter-spacing: 1.1px;
+  letter-spacing: 1.3px;
   text-align: center;
 }
 
@@ -739,12 +739,14 @@ h5 {
   align-items: normal;
   flex-direction: row;
   margin: auto;
-  padding: 40px 0 0 0;
+  padding-top: 40px;
   flex-wrap: wrap;
 }
 @media (max-width: 768px) {
   .footer__content {
     max-width: 708px;
+    padding-top: 30px;
+    justify-content: space-around;
     row-gap: 65px;
   }
 }
@@ -759,6 +761,11 @@ h5 {
 }
 .footer__connection:nth-child(2) {
   flex-basis: 302px;
+}
+@media (max-width: 768px) {
+  .footer__connection {
+    margin-top: 0;
+  }
 }
 
 .footer__heading {
@@ -863,6 +870,15 @@ h5 {
 @media (max-width: 768px) {
   .our-friends__heading {
     margin-bottom: 30px;
+  }
+}
+
+.our-friends__content {
+  padding-bottom: 100px;
+}
+@media (max-width: 768px) {
+  .our-friends__content {
+    padding-bottom: 75px;
   }
 }
 

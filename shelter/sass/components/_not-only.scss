@@ -4,8 +4,9 @@
   padding-top: 60px;
 
   @include media-tablet {
-    max-width: 569px + 70px;
+    max-width: 708px;
     flex-direction: column;
+    padding-top: 30px;
     // display: block;
   }
 }
