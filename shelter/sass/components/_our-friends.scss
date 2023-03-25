@@ -6,6 +6,9 @@
   padding: 80px 0 100px 0;
   max-width: 1200px;
   margin: 0 auto 0 auto;
+  @include media-tablet {
+    max-width: 708px;
+  }
 }
 
 .our-friends__heading {
@@ -17,14 +20,6 @@
   // white-space: pre-line;
 }
 
-.our-friends__carousel {
-  margin-bottom: 60px;
-}
-
-.carousel {
-  @include content-flex();
-}
-
 .arrow-prev {
   @include btn($padding: 21px 17px);
 }
@@ -33,27 +28,29 @@
   @include btn($padding: 21px 17px);
 }
 
-.our-friends__cards {
-  @include content-flex(1200px-210px, $align: normal);
-  width: 990px;
-  flex-wrap: wrap;
+.our-friends__carousel {
+  margin-bottom: 60px;
 }
 
-.our-friends__card {
-  max-width: 270px;
-  min-height: 435px;
-  border-radius: 9px;
-  text-align: center;
-  background-color: $color-light-s;
-  cursor: pointer;
-  @extend %transition;
-  &:hover .btn {
-    background-color: $color-primery-light;
-    border: 2px solid $color-primery-light;
+.carousel {
+  @include content-flex();
+}
+
+.carousel__cards {
+  display: flex;
+  justify-content: space-between;
+  width: 990px;
+  flex-wrap: wrap;
+  @include media-tablet {
+    width: 708px - 64px - 64px;
   }
-  &:active .btn {
-    background-color: $color-primery;
-    border: 2px solid $color-primery;
+}
+
+.carousel__card {
+  &:nth-child(3) {
+    @include media-tablet {
+      display: none;
+    }
   }
 }
 

@@ -2,12 +2,23 @@
   @include content-flex(1200px, $align: start);
   margin: auto;
   padding-top: 60px;
+
+  @include media-tablet {
+    max-width: 569px + 70px;
+    flex-direction: column;
+    // display: block;
+  }
 }
 
 .not-only__text {
   @include content-flex(460px, $direction: column, $align: normal);
   min-height: 322px;
   padding-top: 163px;
+
+  @include media-tablet {
+    padding: 0;
+    margin: 0 auto 100px auto;
+  }
 }
 
 .not-only__heading {
@@ -25,6 +36,10 @@
   background-color: $color-primery;
   width: 207px;
   height: 52px;
+
+  @include media-tablet {
+    align-self: center;
+  }
 }
 
 .not-only__img {
@@ -32,4 +47,11 @@
   min-height: 728px;
   background-image: url(../assets/img/start-screen-puppy.png);
   background-size: cover;
+
+  @include media-tablet {
+    width: 569px;
+    min-height: 593px;
+    align-self: flex-end;
+    // margin-left: 70px;
+  }
 }

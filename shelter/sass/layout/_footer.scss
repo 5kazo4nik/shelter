@@ -6,6 +6,12 @@
   @include content-flex(1200px, $align: normal);
   margin: auto;
   padding: 40px 0 0 0;
+  flex-wrap: wrap;
+
+  @include media-tablet {
+    max-width: 708px;
+    row-gap: 65px;
+  }
 }
 
 .footer__connection {
@@ -67,4 +73,8 @@
   background-image: url(../assets/img/footer-puppy.png);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include media-tablet {
+    margin: 0 auto 0 auto;
+  }
 }

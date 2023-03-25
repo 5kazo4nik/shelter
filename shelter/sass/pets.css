@@ -397,7 +397,7 @@ ul {
   list-style: none;
 }
 
-.our-friends__card, .navigation__item, .btn, .button {
+.navigation__item, .card, .btn, .button {
   transition: all 0.5s ease-in-out;
 }
 
@@ -512,17 +512,21 @@ h5 {
   border: 2px solid #cdcdcd;
 }
 
-.arrow-prev {
-  width: 14px;
-  height: 6px;
-  background-image: url(../assets/icons/arrow.svg);
+.card {
+  max-width: 270px;
+  min-height: 435px;
+  border-radius: 9px;
+  text-align: center;
+  background-color: #fafafa;
+  cursor: pointer;
 }
-
-.arrow-next {
-  width: 14px;
-  height: 6px;
-  background-image: url(../assets/icons/arrow.svg);
-  transform: rotate(180deg);
+.card:hover .btn {
+  background-color: #fddcc4;
+  border: 2px solid #fddcc4;
+}
+.card:active .btn {
+  background-color: #f1cdb3;
+  border: 2px solid #f1cdb3;
 }
 
 .navigation__list {
@@ -571,6 +575,11 @@ h5 {
   max-width: 1200px;
   margin: 0 auto 0 auto;
 }
+@media (max-width: 768px) {
+  .our-friends__content {
+    max-width: 708px;
+  }
+}
 
 .our-friends__heading {
   width: -moz-fit-content;
@@ -579,18 +588,6 @@ h5 {
   text-align: center;
   color: #545454;
   letter-spacing: 2px;
-}
-
-.our-friends__carousel {
-  margin-bottom: 60px;
-}
-
-.carousel {
-  max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
 }
 
 .arrow-prev {
@@ -611,31 +608,34 @@ h5 {
   cursor: pointer;
 }
 
-.our-friends__cards {
-  max-width: 990px;
+.our-friends__carousel {
+  margin-bottom: 60px;
+}
+
+.carousel {
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  align-items: normal;
+  align-items: center;
   flex-direction: row;
+}
+
+.carousel__cards {
+  display: flex;
+  justify-content: space-between;
   width: 990px;
   flex-wrap: wrap;
 }
+@media (max-width: 768px) {
+  .carousel__cards {
+    width: 580px;
+  }
+}
 
-.our-friends__card {
-  max-width: 270px;
-  min-height: 435px;
-  border-radius: 9px;
-  text-align: center;
-  background-color: #fafafa;
-  cursor: pointer;
-}
-.our-friends__card:hover .btn {
-  background-color: #fddcc4;
-  border: 2px solid #fddcc4;
-}
-.our-friends__card:active .btn {
-  background-color: #f1cdb3;
-  border: 2px solid #f1cdb3;
+@media (max-width: 768px) {
+  .carousel__card:nth-child(3) {
+    display: none;
+  }
 }
 
 .our-friends__img {
@@ -699,6 +699,11 @@ h5 {
   margin: 0 auto;
   padding: 30px 0 30px 0;
 }
+@media (max-width: 768px) {
+  .header__content {
+    max-width: 708px;
+  }
+}
 
 .header__logo {
   color: #ffffff;
@@ -735,6 +740,13 @@ h5 {
   flex-direction: row;
   margin: auto;
   padding: 40px 0 0 0;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .footer__content {
+    max-width: 708px;
+    row-gap: 65px;
+  }
 }
 
 .footer__connection {
@@ -800,6 +812,11 @@ h5 {
   background-image: url(../assets/img/footer-puppy.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 768px) {
+  .footer__img {
+    margin: 0 auto 0 auto;
+  }
 }
 
 .header__logo h1 {

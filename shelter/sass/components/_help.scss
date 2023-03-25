@@ -2,6 +2,10 @@
   max-width: 1200px;
   padding: 80px 0 100px 0;
   margin: auto;
+
+  @include media-tablet {
+    max-width: 630px;
+  }
 }
 
 .help__heading {
@@ -13,13 +17,22 @@
 }
 
 .help__items {
-  @include content-flex(1026px, $align: normal, $justify: space-around);
-  // width: 1026px;
-  justify-content: center;
+  @include content-flex(1026px, $align: normal, $justify: center);
   flex-wrap: wrap;
   column-gap: 120px;
   row-gap: 55px;
   margin: auto;
+
+  @include media-tablet {
+    max-width: 630px;
+    column-gap: 60px;
+  }
+}
+
+.help__item {
+  @include media-tablet {
+    flex-basis: 170px;
+  }
 }
 
 .help__text {

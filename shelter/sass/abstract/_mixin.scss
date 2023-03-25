@@ -21,3 +21,9 @@
   border-radius: 100px;
   cursor: pointer;
 }
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
