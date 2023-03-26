@@ -1,6 +1,10 @@
 .navigation__list {
   text-decoration: none;
   display: flex;
+
+  @include media-big-mobile {
+    display: none;
+  }
 }
 
 .navigation__item {
@@ -31,9 +35,6 @@
 
   &:hover {
     color: $color-light-s;
-    // &:before {
-    //   width: 100%;
-    // }
   }
 
   &:active {

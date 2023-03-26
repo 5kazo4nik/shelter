@@ -9,6 +9,11 @@
   @include media-tablet {
     max-width: 708px;
   }
+
+  @include media-big-mobile {
+    max-width: 300px;
+    padding: 42px 0 42px 0;
+  }
 }
 
 .our-friends__heading {
@@ -18,22 +23,46 @@
   color: $color-dark-l;
   letter-spacing: 2px;
   // white-space: pre-line;
+
+  @include media-big-mobile {
+    margin-bottom: 42px;
+    letter-spacing: 1.5px;
+  }
 }
 
 .arrow-prev {
   @include btn($padding: 21px 17px);
+
+  @include media-big-mobile {
+    order: 2;
+  }
 }
 
 .arrow-next {
   @include btn($padding: 21px 17px);
+
+  @include media-big-mobile {
+    order: 3;
+  }
 }
 
 .our-friends__carousel {
   margin-bottom: 60px;
+
+  @include media-big-mobile {
+    margin-bottom: 42px;
+  }
 }
 
 .carousel {
   @include content-flex();
+
+  @include media-big-mobile {
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 20px;
+  }
 }
 
 .carousel__cards {
@@ -44,11 +73,21 @@
   @include media-tablet {
     width: 708px - 64px - 64px;
   }
+
+  @include media-big-mobile {
+    order: 1;
+    justify-content: center;
+  }
 }
 
 .carousel__card {
   &:nth-child(3) {
     @include media-tablet {
+      display: none;
+    }
+  }
+  &:nth-child(2) {
+    @include media-big-mobile {
       display: none;
     }
   }

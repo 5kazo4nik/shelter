@@ -7,16 +7,27 @@
     max-width: 437px;
     flex-direction: column;
   }
+
+  @include media-big-mobile {
+    max-width: 300px;
+    // max-width: 270px;
+    padding: 42px 0 42px 0;
+  }
 }
 
 .about__img {
   width: 300px;
-  min-height: 408px;
+  height: 408px;
   background-image: url(../assets/img/about-pets.png);
   background-size: cover;
 
   @include media-tablet {
     order: 2;
+  }
+
+  @include media-big-mobile {
+    width: 260px;
+    height: 353.6px;
   }
 }
 
@@ -28,20 +39,44 @@
     order: 1;
     margin-bottom: 80px;
   }
+  @include media-big-mobile {
+    max-width: 270px;
+    margin: 0 auto 42px auto;
+  }
 }
 
 .about__text h3 {
   color: $color-dark-l;
   max-width: 350px;
   margin: 0;
+
+  @include media-big-mobile {
+    text-align: center;
+    margin-bottom: 25px;
+  }
 }
 
 .about__text p {
   margin: 0;
   color: $color-dark-xl;
+
+  @include media-big-mobile {
+    text-align: justify;
+    margin-bottom: 22px;
+  }
+}
+
+.about__text p:last-child {
+  @include media-big-mobile {
+    margin-bottom: 0px;
+  }
 }
 
 .about__heading {
   letter-spacing: 2px;
   color: $color-dark-l;
+
+  @include media-big-mobile {
+    letter-spacing: 1.8px;
+  }
 }

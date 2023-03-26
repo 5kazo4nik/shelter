@@ -7,7 +7,9 @@
     max-width: 708px;
     flex-direction: column;
     padding-top: 30px;
-    // display: block;
+  }
+  @include media-big-mobile {
+    max-width: 300px;
   }
 }
 
@@ -20,17 +22,31 @@
     padding: 0;
     margin: 0 auto 100px auto;
   }
+  @include media-big-mobile {
+    min-height: 296px;
+    margin-bottom: 105px;
+  }
 }
 
 .not-only__heading {
   max-width: 310px;
   color: $color-light-xl;
-  margin: 0;
+  margin: 0 auto;
+
+  @include media-big-mobile {
+    max-width: 200px;
+    text-align: center;
+    letter-spacing: 1.3px;
+  }
 }
 
 .not-only__description {
   color: $color-dark-s;
   margin: 0;
+
+  @include media-big-mobile {
+    text-align: center;
+  }
 }
 
 .not-only__button {
@@ -45,14 +61,17 @@
 
 .not-only__img {
   width: 698px;
-  min-height: 728px;
+  height: 728px;
   background-image: url(../assets/img/start-screen-puppy.png);
   background-size: cover;
 
   @include media-tablet {
     width: 569px;
-    min-height: 593px;
+    height: 593px;
     align-self: flex-end;
-    // margin-left: 70px;
+  }
+  @include media-big-mobile {
+    width: 260px;
+    height: 271.7px;
   }
 }

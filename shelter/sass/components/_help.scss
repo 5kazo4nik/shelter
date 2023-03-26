@@ -6,6 +6,10 @@
   @include media-tablet {
     max-width: 630px;
   }
+  @include media-big-mobile {
+    max-width: 290px;
+    padding: 42px 0 42px 0;
+  }
 }
 
 .help__heading {
@@ -14,6 +18,14 @@
   color: $color-dark-l;
   text-align: center;
   letter-spacing: 1.8px;
+
+  @include media-big-mobile {
+    max-width: 250px;
+  }
+  @include media-big-mobile {
+    margin-bottom: 42px;
+    letter-spacing: 1.5px;
+  }
 }
 
 .help__items {
@@ -27,11 +39,18 @@
     max-width: 630px;
     column-gap: 60px;
   }
+  @include media-big-mobile {
+    gap: 30px;
+    justify-content: left;
+  }
 }
 
 .help__item {
   @include media-tablet {
     flex-basis: 170px;
+  }
+  @include media-big-mobile {
+    flex-basis: 130px;
   }
 }
 
@@ -48,4 +67,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include media-big-mobile {
+    margin-bottom: 20px;
+    height: 50px;
+    img {
+      height: 50px;
+    }
+  }
 }
