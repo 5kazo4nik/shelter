@@ -4,6 +4,9 @@
   @include media-tablet {
     margin-bottom: 30px;
   }
+  @include media-big-mobile {
+    margin-bottom: 42px;
+  }
 }
 
 .our-friends__content {
@@ -11,6 +14,9 @@
 
   @include media-tablet {
     padding-bottom: 75px;
+  }
+  @include media-big-mobile {
+    padding-bottom: 42px;
   }
 }
 
@@ -24,6 +30,10 @@
     max-width: 580px;
     margin: 0 auto 40px auto;
   }
+  @include media-big-mobile {
+    justify-content: center;
+    margin-bottom: 42px;
+  }
 }
 
 .our-friends__card {
@@ -33,11 +43,21 @@
       display: none;
     }
   }
+  @include media-big-mobile {
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      display: none;
+    }
+  }
 }
 
 .our-friends__buttons {
   margin: auto;
   @include content-flex(340px);
+  @include media-big-mobile {
+    max-width: 300px;
+  }
 }
 
 .buttons__item {
@@ -48,6 +68,9 @@
   align-items: center;
   h4 {
     margin: 0;
+    @include media-big-mobile {
+      @include font(2rem, 23px);
+    }
   }
 
   &:nth-child(3) {
