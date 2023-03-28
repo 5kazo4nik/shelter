@@ -1,10 +1,7 @@
 .navigation {
   @extend %transition;
-  // transition: width 0.3s, opacity 0.1s, left 0.3s;
-  // transition: opacity 1s;
 
-  @include media-big-mobile {
-    // display: none;
+  @include media-burger {
     display: flex;
     justify-content: flex-end;
     width: 0%;
@@ -19,7 +16,7 @@
   }
 
   &_active {
-    @include media-big-mobile {
+    @include media-burger {
       width: 100%;
       left: 0%;
       opacity: 1;
@@ -32,7 +29,7 @@
   display: flex;
   @extend %transition;
 
-  @include media-big-mobile {
+  @include media-burger {
     margin: 0;
     width: 320px;
     height: 100%;
@@ -45,7 +42,7 @@
   }
 
   &_active {
-    @include media-big-mobile {
+    @include media-burger {
       opacity: 1;
     }
   }
@@ -91,12 +88,12 @@
   }
 
   a {
-    @include media-big-mobile {
+    @include media-burger {
       @include font(3.2rem, 51.2px);
     }
   }
 
-  @include media-big-mobile {
+  @include media-burger {
     margin: 0;
     max-height: 55px;
     overflow: hidden;

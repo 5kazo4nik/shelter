@@ -42,7 +42,7 @@ h3 {
 h4 {
   @extend %font-georgia;
   @include font(2rem, 23px);
-  @include media-big-mobile {
+  @include media-mobile {
     @include font(1.5rem, 16.5px);
   }
 }

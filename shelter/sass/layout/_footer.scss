@@ -9,16 +9,18 @@
   margin: auto;
   padding-top: 40px;
   flex-wrap: wrap;
+  margin: 0 40px;
+  row-gap: 65px;
 
   @include media-tablet {
-    max-width: 708px;
+    margin: 0 30px;
     padding-top: 30px;
     justify-content: space-around;
-    row-gap: 65px;
   }
 
   @include media-big-mobile {
     row-gap: 40px;
+    margin: 0 10px;
     // justify-content: center;
   }
 }
@@ -37,7 +39,7 @@
   @include media-tablet {
     margin-top: 0;
   }
-  @include media-big-mobile {
+  @include media-mobile {
     flex-basis: 300px;
     height: auto;
     align-items: normal;
@@ -45,7 +47,7 @@
   }
 
   &:nth-child(1) {
-    @include media-big-mobile {
+    @include media-mobile {
       align-items: center;
     }
   }
@@ -56,7 +58,7 @@
   letter-spacing: 1.9px;
   margin: 0;
 
-  @include media-big-mobile {
+  @include media-mobile {
     max-width: 270px;
     margin: auto;
     text-align: center;
@@ -102,7 +104,7 @@
     letter-spacing: 1.2px;
   }
 
-  @include media-big-mobile {
+  @include media-mobile {
     a {
       @include font(2rem, 23px);
     }
@@ -113,14 +115,19 @@
   width: 300px;
   height: 310px;
   background-image: url(../assets/img/footer-puppy.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   @include media-tablet {
     margin: 0 auto 0 auto;
   }
-  @include media-big-mobile {
+  @include media-mobile {
     width: 260px;
     height: 269px;
+  }
+}
+
+@media (max-width: 959px) {
+  .footer__img {
+    margin: auto;
   }
 }

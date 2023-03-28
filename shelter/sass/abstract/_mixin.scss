@@ -33,3 +33,15 @@
     @content;
   }
 }
+
+@mixin media-mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin media-burger {
+  @media (max-width: $burger-width) {
+    @content;
+  }
+}

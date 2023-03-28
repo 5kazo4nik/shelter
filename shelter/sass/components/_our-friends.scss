@@ -5,14 +5,14 @@
 .our-friends__content {
   padding: 80px 0 100px 0;
   max-width: 1200px;
-  margin: 0 auto 0 auto;
-  @include media-tablet {
-    max-width: 708px;
-  }
+  margin: 0 40px;
 
-  @include media-big-mobile {
-    max-width: 300px;
+  @include media-tablet {
+    margin: 0 30px;
+  }
+  @include media-mobile {
     padding: 42px 0 42px 0;
+    margin: 0 10px;
   }
 }
 
@@ -24,40 +24,28 @@
   letter-spacing: 2px;
   // white-space: pre-line;
 
-  @include media-big-mobile {
+  @include media-mobile {
     margin-bottom: 42px;
     letter-spacing: 1.5px;
-  }
-}
-
-.arrow-prev {
-  @include btn($padding: 21px 17px);
-
-  @include media-big-mobile {
-    order: 2;
-  }
-}
-
-.arrow-next {
-  @include btn($padding: 21px 17px);
-
-  @include media-big-mobile {
-    order: 3;
   }
 }
 
 .our-friends__carousel {
   margin-bottom: 60px;
 
-  @include media-big-mobile {
+  @include media-mobile {
     margin-bottom: 42px;
   }
 }
 
 .carousel {
   @include content-flex();
+  // column-gap: 53px;
 
-  @include media-big-mobile {
+  // @include media-tablet {
+  //   column-gap: 12px;
+  // }
+  @include media-mobile {
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 80px;
@@ -68,13 +56,16 @@
 .carousel__cards {
   display: flex;
   justify-content: space-between;
-  width: 990px;
   flex-wrap: wrap;
+  row-gap: 30px;
+  margin: 0 53px 0 53px;
+  width: 100%;
+
   @include media-tablet {
-    width: 708px - 64px - 64px;
+    margin: 0 12px 0 12px;
   }
 
-  @include media-big-mobile {
+  @include media-mobile {
     order: 1;
     justify-content: center;
   }
@@ -87,7 +78,7 @@
     }
   }
   &:nth-child(2) {
-    @include media-big-mobile {
+    @include media-mobile {
       display: none;
     }
   }
@@ -104,6 +95,10 @@
   margin: 0;
   padding-bottom: 30px;
   letter-spacing: 1.2px;
+
+  @include media-mobile {
+    @include font(2rem, 22.7px);
+  }
 }
 
 .card__button {
@@ -126,14 +121,45 @@
 }
 
 .arrow-prev {
+  @include btn($padding: 21px 17px);
   width: 14px;
   height: 6px;
   background-image: url(../assets/icons/Arrow.svg);
+
+  @include media-mobile {
+    order: 2;
+  }
 }
 
 .arrow-next {
+  @include btn($padding: 21px 17px);
   width: 14px;
   height: 6px;
   background-image: url(../assets/icons/Arrow.svg);
   transform: rotate(180deg);
+
+  @include media-mobile {
+    order: 3;
+  }
 }
+
+// .arrow-prev {
+//   margin: 0 53px 0 40px;
+
+//   @include media-tablet {
+//     margin: 0 12px 0 30px;
+//   }
+//   @include media-mobile {
+//     margin: 0;
+//   }
+// }
+
+// .arrow-next {
+//   margin: 0 40px 0 53px;
+//   @include media-tablet {
+//     margin: 0 30px 0 12px;
+//   }
+//   @include media-mobile {
+//     margin: 0;
+//   }
+// }

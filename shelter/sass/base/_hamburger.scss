@@ -3,7 +3,7 @@
   position: relative;
   z-index: 2;
 
-  @include media-big-mobile {
+  @include media-burger {
     display: block;
   }
 

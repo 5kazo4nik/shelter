@@ -1,30 +1,30 @@
 .not-only__content {
   @include content-flex(1200px, $align: start);
-  margin: auto;
-  padding-top: 60px;
+  margin: 0 40px;
+  align-items: center;
 
   @include media-tablet {
-    max-width: 708px;
     flex-direction: column;
     padding-top: 30px;
+    margin: 0 30px;
   }
   @include media-big-mobile {
-    max-width: 300px;
+    margin: 0 10px;
   }
 }
 
 .not-only__text {
   @include content-flex(460px, $direction: column, $align: normal);
   min-height: 322px;
-  padding-top: 163px;
 
   @include media-tablet {
     padding: 0;
-    margin: 0 auto 100px auto;
+    margin: 0 124px 100px 124px;
   }
   @include media-big-mobile {
+    max-width: 100%;
     min-height: 296px;
-    margin-bottom: 105px;
+    margin: 0 0 105px 0;
   }
 }
 
@@ -34,13 +34,17 @@
   margin: 0;
 
   @include media-tablet {
-    margin: 0 auto;
+    margin: 0;
   }
 
   @include media-big-mobile {
-    max-width: 200px;
+    margin: 0 auto 0 auto;
     text-align: center;
     letter-spacing: 1.3px;
+  }
+
+  @include media-mobile {
+    max-width: 200px;
   }
 }
 
@@ -64,18 +68,22 @@
 }
 
 .not-only__img {
-  width: 698px;
-  height: 728px;
-  background-image: url(../assets/img/start-screen-puppy.png);
-  background-size: cover;
+  max-width: 698px;
+  height: auto;
+  padding-top: 60px;
 
   @include media-tablet {
-    width: 569px;
-    height: 593px;
+    padding: 0;
+    max-width: 569px;
     align-self: flex-end;
   }
   @include media-big-mobile {
-    width: 260px;
-    height: 271.7px;
+    max-width: 260px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -7px;
   }
 }
