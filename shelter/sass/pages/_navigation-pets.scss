@@ -4,6 +4,9 @@
   &:first-child {
     color: $color-dark-l;
     cursor: pointer;
+    &::before {
+      width: 0%;
+    }
     @include media-big-mobile {
       color: $color-dark-s;
     }
@@ -23,14 +26,11 @@
   &:nth-child(2) {
     color: $color-dark-3xl;
     cursor: default;
+    &::before {
+      width: 100%;
+    }
     @include media-big-mobile {
       color: $color-light-s;
-    }
-  }
-
-  &:nth-child(2):active {
-    &:before {
-      width: 0%;
     }
   }
 

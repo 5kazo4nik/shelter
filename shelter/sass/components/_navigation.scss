@@ -60,6 +60,9 @@
   &:first-child {
     color: $color-light-s;
     cursor: default;
+    &::before {
+      width: 100%;
+    }
   }
 
   &:last-child {
@@ -84,11 +87,6 @@
   &:active {
     &:before {
       width: 100%;
-    }
-  }
-  &:first-child:active {
-    &:before {
-      width: 0%;
     }
   }
 
