@@ -894,7 +894,8 @@ h5 {
 }
 
 .header-main {
-  background: url(../assets/svg/noise_transparent@2x.svg), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  background: url(../assets/svg/start-screen-gradient-background.svg);
+  background-size: cover;
 }
 
 .header__content {
@@ -926,7 +927,8 @@ h5 {
 }
 
 .footer {
-  background: url(../assets/svg/noise_transparent@2x.svg), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  background: url(../assets/svg/start-screen-gradient-background.svg);
+  background-size: cover;
 }
 
 .footer__content {

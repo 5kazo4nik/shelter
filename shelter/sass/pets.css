@@ -512,19 +512,6 @@ h5 {
   border: 2px solid #cdcdcd;
 }
 
-.arrow-prev {
-  width: 14px;
-  height: 6px;
-  background-image: url(../assets/icons/arrow.svg);
-}
-
-.arrow-next {
-  width: 14px;
-  height: 6px;
-  background-image: url(../assets/icons/arrow.svg);
-  transform: rotate(180deg);
-}
-
 .navigation__list {
   text-decoration: none;
   display: flex;
@@ -687,7 +674,8 @@ h5 {
 }
 
 .header-main {
-  background: url(../assets/svg/noise_transparent@2x.svg), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  background: url(../assets/svg/start-screen-gradient-background.svg);
+  background-size: cover;
 }
 
 .header__content {
@@ -724,7 +712,8 @@ h5 {
 }
 
 .footer {
-  background: url(../assets/svg/noise_transparent@2x.svg), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  background: url(../assets/svg/start-screen-gradient-background.svg);
+  background-size: cover;
 }
 
 .footer__content {
@@ -885,4 +874,9 @@ h5 {
 }
 .buttons__item:nth-child(4), .buttons__item:nth-child(5) {
   transform: rotate(180deg);
+}
+
+.footer {
+  background: url(../assets/svg/start-screen-gradient-background.svg);
+  background-size: cover;
 }/*# sourceMappingURL=pets.css.map */
