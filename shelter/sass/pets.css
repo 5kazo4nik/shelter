@@ -397,7 +397,7 @@ ul {
   list-style: none;
 }
 
-.our-friends__card, .navigation__item, .btn, .button {
+.connection__text, .our-friends__card, .navigation__item, .btn, .button {
   transition: all 0.5s ease-in-out;
 }
 
@@ -545,8 +545,8 @@ h5 {
 .navigation__item:active:before {
   width: 100%;
 }
-.navigation__item:first-child:active:before {
-  width: 0%;
+.navigation__item:first-child:before {
+  width: 100%;
 }
 
 .our-friends {
@@ -624,11 +624,15 @@ h5 {
   background-color: #f1cdb3;
   border: 2px solid #f1cdb3;
 }
+.our-friends__card:hover {
+  background-color: #ffffff;
+  box-shadow: 4px 4px 30px 10px #fafafa;
+}
 
 .our-friends__img {
   width: 270px;
   height: 270px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .our-friends__name {
@@ -751,6 +755,9 @@ h5 {
   align-items: center;
   flex-direction: row;
 }
+.connection__links:hover .connection__text {
+  color: #fddcc4;
+}
 
 .connection__img {
   height: 32px;
@@ -812,6 +819,9 @@ h5 {
   color: #545454;
   cursor: pointer;
 }
+.navigation__item:first-child::before {
+  width: 0%;
+}
 .navigation__item:last-child {
   margin-right: 0;
 }
@@ -822,8 +832,8 @@ h5 {
   color: #292929;
   cursor: default;
 }
-.navigation__item:nth-child(2):active:before {
-  width: 0%;
+.navigation__item:nth-child(2)::before {
+  width: 100%;
 }
 .navigation__item:first-child:active:before {
   width: 100%;

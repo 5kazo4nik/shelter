@@ -30,6 +30,10 @@
 
 .connection__links {
   @include content-flex(auto, $justify: normal);
+
+  &:hover .connection__text {
+    color: $color-primery-light;
+  }
 }
 
 .connection__img {
@@ -58,6 +62,7 @@
   max-width: 260px;
   color: $color-primery;
   margin: 0;
+  @extend %transition;
   a {
     letter-spacing: 1.2px;
   }

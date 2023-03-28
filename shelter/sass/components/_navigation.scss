@@ -41,9 +41,12 @@
       width: 100%;
     }
   }
-  &:first-child:active {
-    &:before {
-      width: 0%;
-    }
+  // &:first-child:active {
+  //   &:before {
+  //     width: 0%;
+  //   }
+  // }
+  &:first-child:before {
+    width: 100%;
   }
 }

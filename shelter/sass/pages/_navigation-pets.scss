@@ -3,6 +3,9 @@
   &:first-child {
     color: $color-dark-l;
     cursor: pointer;
+    &::before {
+      width: 0%;
+    }
   }
 
   &:last-child {
@@ -16,13 +19,16 @@
   &:nth-child(2) {
     color: $color-dark-3xl;
     cursor: default;
-  }
-
-  &:nth-child(2):active {
-    &:before {
-      width: 0%;
+    &::before {
+      width: 100%;
     }
   }
+
+  // &:nth-child(2):active {
+  //   &:before {
+  //     width: 0%;
+  //   }
+  // }
 
   &:first-child:active {
     &:before {
