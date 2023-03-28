@@ -9,6 +9,7 @@ html {
 body {
   @extend %font-arial;
   @include font(1.5rem, 24px);
+  // overflow: hidden;
 }
 
 a {

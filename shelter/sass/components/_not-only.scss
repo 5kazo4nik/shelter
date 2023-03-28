@@ -31,7 +31,11 @@
 .not-only__heading {
   max-width: 310px;
   color: $color-light-xl;
-  margin: 0 auto;
+  margin: 0;
+
+  @include media-tablet {
+    margin: 0 auto;
+  }
 
   @include media-big-mobile {
     max-width: 200px;

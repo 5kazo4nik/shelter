@@ -1,8 +1,12 @@
 .navigation__item {
   color: $color-dark-l;
+
   &:first-child {
     color: $color-dark-l;
     cursor: pointer;
+    @include media-big-mobile {
+      color: $color-dark-s;
+    }
   }
 
   &:last-child {
@@ -11,11 +15,17 @@
 
   &:hover {
     color: $color-dark-3xl;
+    @include media-big-mobile {
+      color: $color-light-s;
+    }
   }
 
   &:nth-child(2) {
     color: $color-dark-3xl;
     cursor: default;
+    @include media-big-mobile {
+      color: $color-light-s;
+    }
   }
 
   &:nth-child(2):active {
@@ -28,5 +38,9 @@
     &:before {
       width: 100%;
     }
+  }
+
+  @include media-big-mobile {
+    color: $color-dark-s;
   }
 }
