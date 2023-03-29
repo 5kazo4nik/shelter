@@ -1,12 +1,18 @@
-.burger {
-  display: none;
+.burger__btn {
+  @extend %transition;
+  // justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
   position: relative;
   z-index: 2;
-
+  display: none;
   @include media-burger {
-    display: block;
+    display: flex;
   }
+}
 
+.burger {
   width: 30px;
   height: 2px;
   position: relative;

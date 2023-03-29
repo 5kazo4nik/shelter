@@ -1,7 +1,7 @@
 .not-only__content {
-  @include content-flex(1200px, $align: start);
+  @include content-flex(1200px);
   margin: 0 40px;
-  align-items: center;
+  align-items: end;
 
   @include media-tablet {
     flex-direction: column;
@@ -16,6 +16,7 @@
 .not-only__text {
   @include content-flex(460px, $direction: column, $align: normal);
   min-height: 322px;
+  margin-bottom: 243px;
 
   @include media-tablet {
     padding: 0;
@@ -70,10 +71,10 @@
 .not-only__img {
   max-width: 698px;
   height: auto;
-  padding-top: 60px;
+  margin-top: 60px;
 
   @include media-tablet {
-    padding: 0;
+    margin: 0;
     max-width: 569px;
     align-self: flex-end;
   }

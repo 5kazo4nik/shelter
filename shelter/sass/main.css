@@ -397,7 +397,7 @@ ul {
   list-style: none;
 }
 
-.connection__text, .addition__links, .navigation__item, .navigation__list, .navigation, .burger::after, .burger::before, .burger, .card, .btn, .button {
+.connection__text, .addition__links, .navigation__item, .navigation__list, .navigation, .burger::after, .burger::before, .burger, .burger__btn, .card, .btn, .button {
   transition: all 0.5s ease-in-out;
 }
 
@@ -422,6 +422,10 @@ body {
   line-height: 24px;
   font-weight: 400;
   font-style: normal;
+}
+
+.body_lock {
+  overflow: hidden;
 }
 
 a {
@@ -553,18 +557,24 @@ h5 {
   border: 2px solid #f1cdb3;
 }
 
-.burger {
-  display: none;
+.burger__btn {
+  align-items: center;
+  width: 30px;
+  height: 30px;
   position: relative;
   z-index: 2;
+  display: none;
+}
+@media (max-width: 767px) {
+  .burger__btn {
+    display: flex;
+  }
+}
+
+.burger {
   width: 30px;
   height: 2px;
   position: relative;
-}
-@media (max-width: 767px) {
-  .burger {
-    display: block;
-  }
 }
 .burger::before {
   content: "";
@@ -711,10 +721,10 @@ h5 {
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   flex-direction: row;
   margin: 0 40px;
-  align-items: center;
+  align-items: end;
 }
 @media (max-width: 768px) {
   .not-only__content {
@@ -736,6 +746,7 @@ h5 {
   align-items: normal;
   flex-direction: column;
   min-height: 322px;
+  margin-bottom: 243px;
 }
 @media (max-width: 768px) {
   .not-only__text {
@@ -798,11 +809,11 @@ h5 {
 .not-only__img {
   max-width: 698px;
   height: auto;
-  padding-top: 60px;
+  margin-top: 60px;
 }
 @media (max-width: 768px) {
   .not-only__img {
-    padding: 0;
+    margin: 0;
     max-width: 569px;
     align-self: flex-end;
   }
@@ -1228,7 +1239,7 @@ h5 {
 }
 
 .addition__text {
-  width: 380px;
+  max-width: 380px;
 }
 @media (max-width: 768px) {
   .addition__text {
@@ -1238,7 +1249,7 @@ h5 {
 }
 @media (max-width: 450px) {
   .addition__text {
-    width: 280px;
+    max-width: 280px;
     margin-bottom: 42px;
   }
 }
@@ -1300,6 +1311,7 @@ h5 {
   background-color: #f1cdb3;
   border-radius: 9px;
   margin: 0 0 20px 0;
+  cursor: pointer;
 }
 .addition__links:hover {
   background-color: #fddcc4;
@@ -1313,7 +1325,6 @@ h5 {
   padding: 0 15px 0 0;
   color: #545454;
   letter-spacing: 1.1px;
-  cursor: pointer;
 }
 @media (max-width: 450px) {
   .addition__number {

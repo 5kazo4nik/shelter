@@ -397,7 +397,7 @@ ul {
   list-style: none;
 }
 
-.connection__text, .navigation__item, .navigation__list, .navigation, .burger::after, .burger::before, .burger, .card, .btn, .button {
+.connection__text, .navigation__item, .navigation__list, .navigation, .burger::after, .burger::before, .burger, .burger__btn, .card, .btn, .button {
   transition: all 0.5s ease-in-out;
 }
 
@@ -422,6 +422,10 @@ body {
   line-height: 24px;
   font-weight: 400;
   font-style: normal;
+}
+
+.body_lock {
+  overflow: hidden;
 }
 
 a {
@@ -553,18 +557,24 @@ h5 {
   border: 2px solid #f1cdb3;
 }
 
-.burger {
-  display: none;
+.burger__btn {
+  align-items: center;
+  width: 30px;
+  height: 30px;
   position: relative;
   z-index: 2;
+  display: none;
+}
+@media (max-width: 767px) {
+  .burger__btn {
+    display: flex;
+  }
+}
+
+.burger {
   width: 30px;
   height: 2px;
   position: relative;
-}
-@media (max-width: 767px) {
-  .burger {
-    display: block;
-  }
 }
 .burger::before {
   content: "";

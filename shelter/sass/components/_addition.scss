@@ -35,14 +35,16 @@
 }
 
 .addition__text {
-  width: 380px;
+  max-width: 380px;
+  // width: 380px;
+  // margin: 0 30px 0 30px;
 
   @include media-tablet {
     order: 1;
     margin: 0 auto 60px auto;
   }
   @include media-mobile {
-    width: 280px;
+    max-width: 280px;
     margin-bottom: 42px;
   }
 }
@@ -93,6 +95,7 @@
   background-color: $color-primery;
   border-radius: 9px;
   margin: 0 0 20px 0;
+  cursor: pointer;
   @extend %transition;
   &:hover {
     background-color: $color-primery-light;
@@ -107,7 +110,6 @@
   padding: 0 15px 0 0;
   color: $color-dark-l;
   letter-spacing: 1.1px;
-  cursor: pointer;
 
   @include media-mobile {
     letter-spacing: 0.8px;
