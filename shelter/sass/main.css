@@ -1031,7 +1031,7 @@ h5 {
   box-shadow: 4px 4px 30px 10px #fafafa;
 }
 
-@media (max-width: 817px) and (min-width: 768px) {
+@media (max-width: 817px) and (min-width: 769px) {
   .carousel__card {
     margin: auto;
   }
