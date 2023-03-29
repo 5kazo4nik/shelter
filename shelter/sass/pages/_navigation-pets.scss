@@ -1,10 +1,15 @@
 .navigation__item {
   color: $color-dark-l;
+
   &:first-child {
     color: $color-dark-l;
     cursor: pointer;
     &::before {
       width: 0%;
+    }
+    
+    @include media-burger {
+      color: $color-dark-s;
     }
   }
 
@@ -14,6 +19,9 @@
 
   &:hover {
     color: $color-dark-3xl;
+    @include media-burger {
+      color: $color-light-s;
+    }
   }
 
   &:nth-child(2) {
@@ -21,6 +29,9 @@
     cursor: default;
     &::before {
       width: 100%;
+    }
+    @include media-burger {
+      color: $color-light-s;
     }
   }
 
@@ -34,5 +45,9 @@
     &:before {
       width: 100%;
     }
+  }
+
+  @include media-burger {
+    color: $color-dark-s;
   }
 }

@@ -6,25 +6,62 @@
   @include content-flex(915px);
   margin: auto;
   padding: 80px 0 100px 0;
+
+  @include media-tablet {
+    max-width: 505px;
+    flex-direction: column;
+  }
+  @include media-mobile {
+    max-width: 300px;
+    padding: 42px 0 42px 0;
+  }
 }
 
 .addition__img {
-  flex-basis: 505px;
-  height: 261px;
-  background-image: url(../assets/img/donation-dog.png);
-  background-size: cover;
+  max-width: 505px;
+  height: auto;
+
+  @include media-tablet {
+    order: 2;
+  }
+  @include media-mobile {
+    max-width: 260px;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: -5px;
+  }
 }
 
 .addition__text {
-  flex-basis: 380px;
+  max-width: 380px;
+  // width: 380px;
+  // margin: 0 30px 0 30px;
+
+  @include media-tablet {
+    order: 1;
+    margin: 0 auto 60px auto;
+  }
+  @include media-mobile {
+    max-width: 280px;
+    margin-bottom: 42px;
+  }
 }
 
 .addition__heading {
-  width: 300px;
+  max-width: 300px;
   color: $color-dark-l;
   white-space: pre-line;
   margin: 0 0 20px 0;
   letter-spacing: 2px;
+
+  @include media-mobile {
+    margin: 0 auto 20px auto;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+  }
 }
 
 .addition__p1 {
@@ -33,6 +70,12 @@
   color: $color-dark-l;
   margin: 0 0 20px 0;
   letter-spacing: 0.9px;
+
+  @include media-mobile {
+    letter-spacing: normal;
+    text-align: center;
+    margin-bottom: 22px;
+  }
 }
 
 .addition__p2 {
@@ -40,6 +83,10 @@
   @include font(1.2rem, 18px, 400, italic);
   color: $color-dark-m;
   margin: 0;
+
+  @include media-mobile {
+    text-align: justify;
+  }
 }
 
 .addition__links {
@@ -48,6 +95,7 @@
   background-color: $color-primery;
   border-radius: 9px;
   margin: 0 0 20px 0;
+  cursor: pointer;
   @extend %transition;
   &:hover {
     background-color: $color-primery-light;
@@ -62,6 +110,10 @@
   padding: 0 15px 0 0;
   color: $color-dark-l;
   letter-spacing: 1.1px;
+
+  @include media-mobile {
+    letter-spacing: 0.8px;
+  }
 }
 
 .addition__card {

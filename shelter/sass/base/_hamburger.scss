@@ -1,0 +1,78 @@
+.burger__btn {
+  @extend %transition;
+  // justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  display: none;
+  @include media-burger {
+    display: flex;
+  }
+}
+
+.burger {
+  width: 30px;
+  height: 2px;
+  position: relative;
+  @extend %transition;
+
+  &::before {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: $color-primery;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    @extend %transition;
+  }
+
+  &::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: $color-primery;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    @extend %transition;
+  }
+
+  &_active {
+    transform: rotate(90deg);
+
+    &::before {
+      transform: rotate(-180deg);
+    }
+
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.burger-main {
+  background-color: $color-primery;
+
+  &::before {
+    background-color: $color-primery;
+  }
+
+  &::after {
+    background-color: $color-primery;
+  }
+}
+
+.burger-pets {
+  background-color: #000;
+
+  &::before {
+    background-color: #000;
+  }
+
+  &::after {
+    background-color: #000;
+  }
+}

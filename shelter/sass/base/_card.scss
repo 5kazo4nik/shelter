@@ -1,0 +1,17 @@
+.card {
+  max-width: 270px;
+  min-height: 435px;
+  border-radius: 9px;
+  text-align: center;
+  background-color: $color-light-s;
+  cursor: pointer;
+  @extend %transition;
+  &:hover .btn {
+    background-color: $color-primery-light;
+    border: 2px solid $color-primery-light;
+  }
+  &:active .btn {
+    background-color: $color-primery;
+    border: 2px solid $color-primery;
+  }
+}

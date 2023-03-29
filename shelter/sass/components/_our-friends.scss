@@ -5,7 +5,15 @@
 .our-friends__content {
   padding: 80px 0 100px 0;
   max-width: 1200px;
-  margin: 0 auto 0 auto;
+  margin: 0 40px;
+
+  @include media-tablet {
+    margin: 0 30px;
+  }
+  @include media-mobile {
+    padding: 42px 0 42px 0;
+    margin: 0 10px;
+  }
 }
 
 .our-friends__heading {
@@ -15,45 +23,64 @@
   color: $color-dark-l;
   letter-spacing: 2px;
   // white-space: pre-line;
+
+  @include media-mobile {
+    margin-bottom: 42px;
+    letter-spacing: 1.5px;
+  }
 }
 
 .our-friends__carousel {
   margin-bottom: 60px;
+
+  @include media-mobile {
+    margin-bottom: 42px;
+  }
 }
 
 .carousel {
   @include content-flex();
-}
+  // column-gap: 53px;
 
-.arrow-prev {
-  @include btn($padding: 21px 17px);
-}
-
-.arrow-next {
-  @include btn($padding: 21px 17px);
-}
-
-.our-friends__cards {
-  @include content-flex(1200px-210px, $align: normal);
-  width: 990px;
-  flex-wrap: wrap;
-}
-
-.our-friends__card {
-  max-width: 270px;
-  min-height: 435px;
-  border-radius: 9px;
-  text-align: center;
-  background-color: $color-light-s;
-  cursor: pointer;
-  @extend %transition;
-  &:hover .btn {
-    background-color: $color-primery-light;
-    border: 2px solid $color-primery-light;
+  // @include media-tablet {
+  //   column-gap: 12px;
+  // }
+  @include media-mobile {
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 20px;
   }
-  &:active .btn {
-    background-color: $color-primery;
-    border: 2px solid $color-primery;
+}
+
+.carousel__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  margin: 0 53px 0 53px;
+  width: 100%;
+
+  @include media-tablet {
+    margin: 0 12px 0 12px;
+  }
+
+  @include media-mobile {
+    order: 1;
+    justify-content: center;
+  }
+}
+
+.carousel__card {
+  &:nth-child(3) {
+    @include media-tablet {
+      display: none;
+    }
+  }
+  &:nth-child(2) {
+    @include media-mobile {
+      display: none;
+    }
   }
   &:hover {
     background-color: $color-light-xl;
@@ -72,6 +99,10 @@
   margin: 0;
   padding-bottom: 30px;
   letter-spacing: 1.2px;
+
+  @include media-mobile {
+    @include font(2rem, 22.7px);
+  }
 }
 
 .card__button {
@@ -94,14 +125,45 @@
 }
 
 .arrow-prev {
+  @include btn($padding: 21px 17px);
   width: 14px;
   height: 6px;
   background-image: url(../assets/icons/Arrow.svg);
+
+  @include media-mobile {
+    order: 2;
+  }
 }
 
 .arrow-next {
+  @include btn($padding: 21px 17px);
   width: 14px;
   height: 6px;
   background-image: url(../assets/icons/Arrow.svg);
   transform: rotate(180deg);
+
+  @include media-mobile {
+    order: 3;
+  }
 }
+
+// .arrow-prev {
+//   margin: 0 53px 0 40px;
+
+//   @include media-tablet {
+//     margin: 0 12px 0 30px;
+//   }
+//   @include media-mobile {
+//     margin: 0;
+//   }
+// }
+
+// .arrow-next {
+//   margin: 0 40px 0 53px;
+//   @include media-tablet {
+//     margin: 0 30px 0 12px;
+//   }
+//   @include media-mobile {
+//     margin: 0;
+//   }
+// }
