@@ -82,12 +82,16 @@
       display: none;
     }
   }
+  &:hover {
+    background-color: $color-light-xl;
+    box-shadow: 4px 4px 30px 10px $color-light-s;
+  }
 }
 
 .our-friends__img {
   width: 270px;
   height: 270px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .our-friends__name {
