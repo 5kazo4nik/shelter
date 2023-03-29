@@ -6,6 +6,11 @@
   background-color: $color-light-s;
   cursor: pointer;
   @extend %transition;
+
+  &:hover {
+    background-color: #fff;
+    box-shadow: 4px 4px 30px 10px $color-light-s;
+  }
   &:hover .btn {
     background-color: $color-primery-light;
     border: 2px solid $color-primery-light;

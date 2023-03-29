@@ -59,15 +59,28 @@
   flex-wrap: wrap;
   row-gap: 30px;
   margin: 0 53px 0 53px;
-  width: 100%;
+  width: 990px;
 
   @include media-tablet {
     margin: 0 12px 0 12px;
+    width: 270px + 40px + 270px;
   }
 
   @include media-mobile {
     order: 1;
     justify-content: center;
+  }
+}
+
+@media (max-width: 817px) and (min-width: 769px) {
+  .carousel__card {
+    margin: auto;
+  }
+}
+
+@media (max-width: 726px) and (min-width: $mobile-width) {
+  .carousel__card {
+    margin: auto;
   }
 }
 
