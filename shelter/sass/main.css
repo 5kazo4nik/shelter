@@ -548,6 +548,10 @@ h5 {
   background-color: #fafafa;
   cursor: pointer;
 }
+.card:hover {
+  background-color: #fff;
+  box-shadow: 4px 4px 30px 10px #fafafa;
+}
 .card:hover .btn {
   background-color: #fddcc4;
   border: 2px solid #fddcc4;
@@ -997,11 +1001,12 @@ h5 {
   flex-wrap: wrap;
   row-gap: 30px;
   margin: 0 53px 0 53px;
-  width: 100%;
+  width: 990px;
 }
 @media (max-width: 768px) {
   .carousel__cards {
     margin: 0 12px 0 12px;
+    width: 580px;
   }
 }
 @media (max-width: 450px) {
@@ -1022,6 +1027,16 @@ h5 {
   }
 }
 
+@media (max-width: 817px) and (min-width: 768px) {
+  .carousel__card {
+    margin: auto;
+  }
+}
+@media (max-width: 726px) and (min-width: 450px) {
+  .carousel__card {
+    margin: auto;
+  }
+}
 .our-friends__img {
   width: 270px;
   height: 270px;
