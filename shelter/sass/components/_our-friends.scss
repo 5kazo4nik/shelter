@@ -59,10 +59,11 @@
   flex-wrap: wrap;
   row-gap: 30px;
   margin: 0 53px 0 53px;
-  width: 100%;
+  width: 990px;
 
   @include media-tablet {
     margin: 0 12px 0 12px;
+    width: 270px + 40px + 270px;
   }
 
   @include media-mobile {
@@ -85,6 +86,18 @@
   &:hover {
     background-color: $color-light-xl;
     box-shadow: 4px 4px 30px 10px $color-light-s;
+  }
+}
+
+@media (max-width: 817px) and (min-width: $tablet-width) {
+  .carousel__card {
+    margin: auto;
+  }
+}
+
+@media (max-width: 726px) and (min-width: $mobile-width) {
+  .carousel__card {
+    margin: auto;
   }
 }
 
