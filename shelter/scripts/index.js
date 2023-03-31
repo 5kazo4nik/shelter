@@ -1,7 +1,8 @@
-import { Card } from './carousel';
+import { createCarousel } from './carousel';
 
 document.addEventListener('DOMContentLoaded', () => {
   setBurgerClick();
+  createCarousel();
 });
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -45,7 +46,5 @@ function burgerClick(e) {
 // console.log(card);
 
 // block.append(card);
-
-console.log(Card);
 
 // console.log(document.documentElement.clientWidth);

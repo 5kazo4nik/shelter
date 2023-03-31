@@ -40,11 +40,8 @@
 
 .carousel {
   @include content-flex();
-  // column-gap: 53px;
+  min-height: 435px;
 
-  // @include media-tablet {
-  //   column-gap: 12px;
-  // }
   @include media-mobile {
     justify-content: center;
     flex-wrap: wrap;

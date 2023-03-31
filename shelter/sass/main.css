@@ -984,6 +984,7 @@ h5 {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  min-height: 435px;
 }
 @media (max-width: 450px) {
   .carousel {
