@@ -1,44 +1,4 @@
-class Card {
-  constructor(src, name, place, alt) {
-    (this.src = src), (this.name = name), (this.place = place), (this.alt = alt);
-  }
-
-  // Создает элемент карточки и возвращает созданную карточку
-  buildCard() {
-    const card = this.createNode('div', this.place, 'card');
-    const imgContainer = this.createNode('div', 'our-friends__img');
-    const img = this.createNode('img');
-    img.src = this.src;
-    img.alt = this.alt;
-    const heading = this.createNode('h4', 'our-friends__name');
-    const button = this.createNode('button', 'card__button', 'btn');
-
-    this.insertNode(heading, this.name);
-    this.insertNode(imgContainer, img);
-    this.insertNode(card, imgContainer);
-    this.insertNode(card, heading);
-    this.insertNode(button, 'Learn more');
-    this.insertNode(card, button);
-
-    return card;
-  }
-
-  // Создает узел с указанными классами
-  createNode(elem, ...classes) {
-    const node = document.createElement(elem);
-    node.classList.add(...classes);
-    return node;
-  }
-
-  // Вставляет текст в узел или элемент в узел
-  insertNode(parent, child) {
-    if (typeof child === 'string') {
-      parent.textContent = child;
-    } else {
-      parent.append(child);
-    }
-  }
-}
+import { Card, getInfo, getRundomPet } from './index';
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -91,7 +51,7 @@ class Carousel {
   // Удаляет ненужное затем получает json карточек, идет по циклу с максимально 3 карточками. Ставит или получает рандомное число из массива чисел карточек и создает на основе этого числа создает карточку, после чего добавляет её в контейнер. Так же тут реализовано определение стрелок следующая и предыдущая так, чтобы карточки не повторялись, при клике на следующую создаются новые неповторимые карточки, при клике назад используются 3 первые карточки, при 2 кликах назад(или если сохраненных элементов меньше 3) создаются новые карточки и добавляются в начало(массива номеров), карточки перед вторым кликом назад так-же сохраняются и на них можно перейти кликом вперед. При клике вперед создаются новые карточки и сохраняются предыдущие, на них можно вернуться при клике назад,
   async setCards() {
     this.removeExcess();
-    const info = await getInfo();
+    const info = await getInfo('../../pets.json');
     let temporaryCardNums = [];
 
     for (let i = 0; i < 3; i++) {
@@ -120,21 +80,9 @@ class Carousel {
   }
 }
 
-// Получает json
-async function getInfo() {
-  const res = await fetch('../../pets.json');
-  const info = await res.json();
-  return info;
-}
-
-// Получает рандомное число.
-function getRundomPet(length) {
-  return Math.round(Math.random() * (length - 1));
-}
-
 function createCarousel() {
   const builder = new Carousel();
   builder.buildCarousel();
 }
 
-export { Card, createCarousel };
+export { createCarousel };

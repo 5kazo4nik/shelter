@@ -58,6 +58,9 @@
   @include media-big-mobile {
     max-width: 300px;
   }
+
+  @extend %font-georgia;
+  @include font(2rem, 23px);
 }
 
 .buttons__item {
@@ -66,12 +69,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  h4 {
-    margin: 0;
-    @include media-big-mobile {
-      @include font(2rem, 23px);
-    }
-  }
 
   &:nth-child(3) {
     background-color: $color-primery;

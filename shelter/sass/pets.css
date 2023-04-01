@@ -405,7 +405,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.btn, .button a, .button, h5, h4, h3, h2, h1 {
+.our-friends__buttons, .btn, .button a, .button, h5, h4, h3, h2, h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -1231,6 +1231,10 @@ h5 {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  font-size: 2rem;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: normal;
 }
 @media (max-width: 625px) {
   .our-friends__buttons {
@@ -1244,17 +1248,6 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.buttons__item h4 {
-  margin: 0;
-}
-@media (max-width: 625px) {
-  .buttons__item h4 {
-    font-size: 2rem;
-    line-height: 23px;
-    font-weight: 400;
-    font-style: normal;
-  }
 }
 .buttons__item:nth-child(3) {
   background-color: #f1cdb3;
