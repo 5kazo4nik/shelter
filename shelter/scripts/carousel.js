@@ -37,14 +37,30 @@ class Carousel {
   // Добавляет слушатели на стрелки и ставит маркировки в экземпляре класса
   addEvents() {
     document.querySelector('.arrow-next').addEventListener('click', async () => {
-      this.arrow = 'next';
-      await this.setCards();
-      this.prevClick = 'next';
+      this.container.classList.add('carousel__cards_toLeft');
+      setTimeout(async () => {
+        this.arrow = 'next';
+        await this.setCards();
+        this.prevClick = 'next';
+        this.container.classList.remove('carousel__cards_toLeft');
+        this.container.classList.add('carousel__cards_fromRight');
+        setTimeout(() => {
+          this.container.classList.remove('carousel__cards_fromRight');
+        }, 300);
+      }, 280);
     });
     document.querySelector('.arrow-prev').addEventListener('click', async () => {
-      this.arrow = 'prev';
-      await this.setCards();
-      this.prevClick = 'prev';
+      this.container.classList.add('carousel__cards_toRight');
+      setTimeout(async () => {
+        this.arrow = 'prev';
+        await this.setCards();
+        this.prevClick = 'prev';
+        this.container.classList.remove('carousel__cards_toRight');
+        this.container.classList.add('carousel__cards_fromLeft');
+        setTimeout(() => {
+          this.container.classList.remove('carousel__cards_fromLeft');
+        }, 300);
+      }, 280);
     });
   }
 

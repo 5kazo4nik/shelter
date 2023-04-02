@@ -397,7 +397,7 @@ ul {
   list-style: none;
 }
 
-.connection__text, .addition__links, .navigation__item, .navigation__list, .navigation, .burger::after, .burger::before, .burger, .burger__btn, .card, .btn, .button {
+.connection__text, .addition__links, .carousel__cards, .navigation__item, .navigation__list, .navigation, .burger::after, .burger::before, .burger, .burger__btn, .card, .btn, .button {
   transition: all 0.5s ease-in-out;
 }
 
@@ -984,7 +984,7 @@ h5 {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  min-height: 435px;
+  overflow: hidden;
 }
 @media (max-width: 450px) {
   .carousel {
@@ -997,12 +997,26 @@ h5 {
 }
 
 .carousel__cards {
+  min-height: 435px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 30px;
   margin: 0 53px 0 53px;
   width: 990px;
+  position: relative;
+}
+.carousel__cards_toLeft {
+  animation: toLeft 0.3s ease-in-out;
+}
+.carousel__cards_fromRight {
+  animation: fromRight 0.3s ease-in-out;
+}
+.carousel__cards_toRight {
+  animation: toRight 0.3s ease-in-out;
+}
+.carousel__cards_fromLeft {
+  animation: fromLeft 0.3s ease-in-out;
 }
 @media (max-width: 768px) {
   .carousel__cards {
@@ -1017,14 +1031,58 @@ h5 {
   }
 }
 
+@keyframes toLeft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+    opacity: 0;
+  }
+}
+@keyframes fromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0%;
+    opacity: 1;
+  }
+}
+@keyframes toRight {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100%;
+    opacity: 0;
+  }
+}
+@keyframes fromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
+}
 @media (max-width: 817px) and (min-width: 769px) {
   .carousel__card {
     margin: auto;
+  }
+  .carousel__cards {
+    min-height: 900px;
   }
 }
 @media (max-width: 726px) and (min-width: 450px) {
   .carousel__card {
     margin: auto;
+  }
+  .carousel__cards {
+    min-height: 900px;
   }
 }
 @media (max-width: 768px) {

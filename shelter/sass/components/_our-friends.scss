@@ -40,7 +40,7 @@
 
 .carousel {
   @include content-flex();
-  min-height: 435px;
+  overflow: hidden;
 
   @include media-mobile {
     justify-content: center;
@@ -51,21 +51,78 @@
 }
 
 .carousel__cards {
+  @extend %transition;
+  min-height: 435px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 30px;
   margin: 0 53px 0 53px;
   width: 990px;
+  position: relative;
+
+  &_toLeft {
+    animation: toLeft 0.3s ease-in-out;
+  }
+
+  &_fromRight {
+    animation: fromRight 0.3s ease-in-out;
+  }
+
+  &_toRight {
+    animation: toRight 0.3s ease-in-out;
+  }
+
+  &_fromLeft {
+    animation: fromLeft 0.3s ease-in-out;
+  }
 
   @include media-tablet {
     margin: 0 12px 0 12px;
     width: 270px + 40px + 270px;
   }
-
   @include media-mobile {
     order: 1;
     justify-content: center;
+  }
+}
+
+@keyframes toLeft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+    opacity: 0;
+  }
+}
+@keyframes fromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0%;
+    opacity: 1;
+  }
+}
+@keyframes toRight {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100%;
+    opacity: 0;
+  }
+}
+@keyframes fromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0%;
+    opacity: 1;
   }
 }
 
@@ -73,11 +130,19 @@
   .carousel__card {
     margin: auto;
   }
+
+  .carousel__cards {
+    min-height: 900px;
+  }
 }
 
 @media (max-width: 726px) and (min-width: $mobile-width) {
   .carousel__card {
     margin: auto;
+  }
+
+  .carousel__cards {
+    min-height: 900px;
   }
 }
 
