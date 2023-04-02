@@ -72,12 +72,14 @@
 
   &:nth-child(3) {
     background-color: $color-primery;
+    cursor: default;
     &:hover {
-      background-color: $color-primery-light;
+      // background-color: $color-primery-light;
+      border: 2px solid $color-primery;
     }
-    &:active {
-      background-color: $color-primery;
-    }
+    // &:active {
+    //   background-color: $color-primery;
+    // }
   }
 
   &:nth-child(4),
