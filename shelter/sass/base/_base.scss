@@ -11,8 +11,14 @@ body {
   @include font(1.5rem, 24px);
 }
 
-.body_lock {
-  overflow: hidden;
+.body {
+  &_lock {
+    overflow: hidden;
+  }
+
+  &_modalLock {
+    overflow: hidden;
+  }
 }
 
 a {

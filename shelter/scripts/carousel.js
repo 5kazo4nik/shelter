@@ -88,7 +88,7 @@ class Carousel {
         this.cardNumbers.push(number);
       }
 
-      const constructCard = new Card(info[number].img, info[number].name, 'carousel__card', info[number].type);
+      const constructCard = new Card(info[number].img, info[number].name, 'carousel__card', info[number].type, info[number]);
       const card = constructCard.buildCard();
       this.container.append(card);
     }

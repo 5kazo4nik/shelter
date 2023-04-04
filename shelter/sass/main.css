@@ -427,6 +427,9 @@ body {
 .body_lock {
   overflow: hidden;
 }
+.body_modalLock {
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
@@ -560,6 +563,9 @@ h5 {
   background-color: #f1cdb3;
   border: 2px solid #f1cdb3;
 }
+.card img {
+  border-radius: 9px 9px 0 0;
+}
 
 .burger__btn {
   align-items: center;
@@ -680,7 +686,7 @@ h5 {
 .modal__img img {
   width: 100%;
   height: auto;
-  border-radius: 9px;
+  border-radius: 9px 0 0 9px;
 }
 
 .modal__text {
