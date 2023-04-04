@@ -1261,7 +1261,7 @@ h5 {
     opacity: 1;
   }
 }
-@media (max-width: 817px) and (min-width: 769px) {
+@media (max-width: 829px) and (min-width: 769px) {
   .carousel__card {
     margin: auto;
   }
@@ -1277,7 +1277,7 @@ h5 {
     min-height: 900px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1095px) {
   .carousel__card:nth-child(3) {
     display: none;
   }
@@ -1335,11 +1335,11 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #f1cdb3;
-  padding: 21px 17px;
+  padding: 0;
   border-radius: 100px;
   cursor: pointer;
-  width: 14px;
-  height: 6px;
+  min-width: 48px;
+  height: 48px;
   background-image: url(../assets/icons/Arrow.svg);
 }
 @media (max-width: 450px) {
@@ -1352,11 +1352,11 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #f1cdb3;
-  padding: 21px 17px;
+  padding: 0;
   border-radius: 100px;
   cursor: pointer;
-  width: 14px;
-  height: 6px;
+  min-width: 48px;
+  height: 48px;
   background-image: url(../assets/icons/Arrow.svg);
   transform: rotate(180deg);
 }

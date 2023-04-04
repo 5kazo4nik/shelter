@@ -58,6 +58,7 @@
   flex-wrap: wrap;
   row-gap: 30px;
   margin: 0 53px 0 53px;
+
   width: 990px;
   position: relative;
 
@@ -126,7 +127,7 @@
   }
 }
 
-@media (max-width: 817px) and (min-width: 769px) {
+@media (max-width: 829px) and (min-width: 769px) {
   .carousel__card {
     margin: auto;
   }
@@ -146,12 +147,13 @@
   }
 }
 
-.carousel__card {
-  &:nth-child(3) {
-    @include media-tablet {
-      display: none;
-    }
+@media (max-width: 1095px) {
+  .carousel__card:nth-child(3) {
+    display: none;
   }
+}
+
+.carousel__card {
   &:nth-child(2) {
     @include media-mobile {
       display: none;
@@ -196,9 +198,9 @@
 }
 
 .arrow-prev {
-  @include btn($padding: 21px 17px);
-  width: 14px;
-  height: 6px;
+  @include btn();
+  min-width: 48px;
+  height: 48px;
   background-image: url(../assets/icons/Arrow.svg);
 
   @include media-mobile {
@@ -207,9 +209,9 @@
 }
 
 .arrow-next {
-  @include btn($padding: 21px 17px);
-  width: 14px;
-  height: 6px;
+  @include btn();
+  min-width: 48px;
+  height: 48px;
   background-image: url(../assets/icons/Arrow.svg);
   transform: rotate(180deg);
 

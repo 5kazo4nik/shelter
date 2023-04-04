@@ -13,7 +13,7 @@
   flex-direction: $direction;
 }
 
-@mixin btn($border: 2px solid $color-primery, $padding) {
+@mixin btn($border: 2px solid $color-primery, $padding: 0) {
   background-repeat: no-repeat;
   background-position: center;
   border: $border;
