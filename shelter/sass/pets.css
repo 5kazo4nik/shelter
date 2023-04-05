@@ -997,6 +997,7 @@ h5 {
 }
 .carousel__cards_fromLeft {
   animation: fromLeft 0.3s ease-in-out;
+
 }
 @media (max-width: 768px) {
   .carousel__cards {
@@ -1075,11 +1076,25 @@ h5 {
     display: none;
   }
 }
+.carousel__card:hover {
+  background-color: #ffffff;
+  box-shadow: 4px 4px 30px 10px #fafafa;
+}
 
+@media (max-width: 817px) and (min-width: 769px) {
+  .carousel__card {
+    margin: auto;
+  }
+}
+@media (max-width: 726px) and (min-width: 450px) {
+  .carousel__card {
+    margin: auto;
+  }
+}
 .our-friends__img {
   width: 270px;
   height: 270px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .our-friends__name {
@@ -1508,4 +1523,9 @@ h5 {
 }
 .buttons__item:nth-child(4), .buttons__item:nth-child(5) {
   transform: rotate(180deg);
+}
+
+.footer {
+  background: url(../assets/svg/start-screen-gradient-background.svg);
+  background-size: cover;
 }/*# sourceMappingURL=pets.css.map */
