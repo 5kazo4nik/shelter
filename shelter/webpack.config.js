@@ -4,6 +4,66 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+// const isDev = process.env.NODE_ENV === 'development'   то-же самое что и с options.mode, однако нужно установить пакет cross-env как дев зависимость.
+
+// module.exports = (env, options) => {
+//   const isProduction = options.mode === 'production';
+//   const filename = (ext) => (isProduction ? `[name].[contenthash].${ext}` : `[name.${ext}]`);
+
+//   const config = {
+//     mode: isProduction ? 'production' : 'development',
+//     devtool: isProduction ? false : 'source-map',
+//     watch: !isProduction,
+//     watchOptions: {
+//       poll: true,
+//       ignored: /node_modules/,
+//     },
+//     entry: ['./scripts/index.js'],
+//     output: {
+//       path: path.resolve(__dirname, 'dist'),
+//       filename: `./scripts/${filename('js')}`,
+//     },
+//     module: {
+//       rules: [
+//         {
+//           test: /\.js$/,
+//           exclude: /node_modules/,
+//           use: {
+//             loader: 'babel-loader',
+//             options: {
+//               presets: ['@babel/preset-env'],
+//             },
+//           },
+//         },
+
+//       ],
+//     },
+//     plugins: [
+//       new CleanWebpackPlugin(),
+//       new MiniCssExtractPlugin({
+//         filename: `./css/${filename('css')}`,
+//       }),
+//       new HtmlWebpackPlugin({
+//         template: './pages/index.html',
+//         filename: 'index.html',
+//         // minify: {
+//         //   collapseWhitespace: isProduction ? true : false
+//         // }
+//       }),
+//       new HtmlWebpackPlugin({
+//         template: './pages/pets/pets.html',
+//         filename: 'pets .html',
+//         // minify: {
+//         //   collapseWhitespace: isProduction ? true : false
+//         // }
+//       }),
+//     ],
+//   };
+//   return config;
+// };
+
+//////////////////////////////////////////////////////////
+
 // module.exports = (env, options) => {
 //   const isProduction = options.mode === 'production';
 //   const config = {
@@ -168,36 +228,37 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 /////////////////////////////////////////////
 
-module.exports = (env, options) => {
-  const isProduction = options.mode === 'production';
-  const config = {
-    mode: isProduction ? 'production' : 'development',
-    devtool: isProduction ? false : 'source-map',
-    watch: !isProduction,
-    watchOptions: {
-      poll: true,
-      ignored: /node_modules/,
-    },
-    entry: ['./scripts/index.js'],
-    output: {
-      path: path.resolve(__dirname, 'dist'),
-      filename: 'script.js',
-    },
-    module: {
-      rules: [
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env'],
-            },
-          },
-        },
-      ],
-    },
-    plugins: [new CleanWebpackPlugin()],
-  };
-  return config;
-};
+// module.exports = (env, options) => {
+//   const isProduction = options.mode === 'production';
+
+//   const config = {
+//     mode: isProduction ? 'production' : 'development',
+//     devtool: isProduction ? false : 'source-map',
+//     watch: !isProduction,
+//     watchOptions: {
+//       poll: true,
+//       ignored: /node_modules/,
+//     },
+//     entry: ['./scripts/index.js'],
+//     output: {
+//       path: path.resolve(__dirname, 'dist'),
+//       filename: 'script.js',
+//     },
+//     module: {
+//       rules: [
+//         {
+//           test: /\.js$/,
+//           exclude: /node_modules/,
+//           use: {
+//             loader: 'babel-loader',
+//             options: {
+//               presets: ['@babel/preset-env'],
+//             },
+//           },
+//         },
+//       ],
+//     },
+//     plugins: [new CleanWebpackPlugin()],
+//   };
+//   return config;
+// };
