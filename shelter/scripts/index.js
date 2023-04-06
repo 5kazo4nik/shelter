@@ -1,5 +1,5 @@
-import '../sass/main.scss';
-import '../sass/pets.scss';
+// import '../sass/main.scss';
+// import '../sass/pets.scss';
 import { createCarousel } from './carousel';
 import { createPagination } from './pagination';
 
