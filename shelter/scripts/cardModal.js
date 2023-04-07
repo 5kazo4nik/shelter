@@ -1,62 +1,3 @@
-// import '../sass/main.scss';
-// import '../sass/pets.scss';
-import { createCarousel } from './carousel';
-import { createPagination } from './pagination';
-
-document.addEventListener('DOMContentLoaded', () => {
-  console.log(
-    '1) Реализация burger menu на обеих страницах: +26\n2) Реализация слайдера-карусели на странице Main: +36\n3) Реализация пагинации на странице Pets: +36\n4) Реализация попап на обеих страницах: +12'
-  );
-
-  setBurgerClick();
-
-  if (document.querySelector('.carousel__cards')) {
-    createCarousel();
-  }
-  if (document.querySelector('.our-friends__list')) {
-    createPagination();
-  }
-});
-
-/////////////////////////////////////////////////////////////////////////////////////////
-
-const burgerLine = document.querySelector('.burger');
-const navigation = document.querySelector('.navigation');
-const navList = document.querySelector('.navigation__list');
-const body = document.querySelector('body');
-
-function setBurgerClick() {
-  body.addEventListener('click', burgerClick);
-}
-
-function delBurgTags() {
-  burgerLine.classList.remove('burger_active');
-  navigation.classList.remove('navigation_active');
-  navList.classList.remove('navigation__list_active');
-  body.classList.remove('body_lock');
-}
-
-function toggleBurgTags() {
-  burgerLine.classList.toggle('burger_active');
-  navigation.classList.toggle('navigation_active');
-  navList.classList.toggle('navigation__list_active');
-  body.classList.toggle('body_lock');
-}
-
-function burgerClick(e) {
-  if (e.target.closest('.burger__btn')) {
-    toggleBurgTags();
-  } else if (e.target !== navList) {
-    delBurgTags();
-  }
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-// block.append(card);
-
-// console.log(document.documentElement.clientWidth);
-
 // Получает json
 async function getInfo(url) {
   const res = await fetch(url);
@@ -68,6 +9,8 @@ async function getInfo(url) {
 function getRundomPet(length) {
   return Math.round(Math.random() * (length - 1));
 }
+
+const body = document.querySelector('body');
 
 /////////////////////////////////////// Класс-генератор карточки.
 class Card {
@@ -150,14 +93,6 @@ class Modal {
     return node;
   }
 
-  // insertNode(parent, child) {
-  //   if (typeof child === 'string') {
-  //     parent.textContent = child;
-  //   } else {
-  //     parent.append(child);
-  //   }
-  // }
-
   // Принимает массив с масивами родителя и ребенка, вставляет ребенка в родителя.
   insertNode(nodes) {
     nodes.forEach(([parent, child]) => {
@@ -175,7 +110,8 @@ class Modal {
     this.modalContent = this.createNode('div', 'modal__content');
     this.modalImg = this.createNode('div', 'modal__img');
     this.innerImg = this.createNode('img');
-    this.innerImg.src = document.querySelector('.carousel__cards') ? this.info.img : '../' + this.info.img;
+    // this.innerImg.src = document.querySelector('.carousel__cards') ? this.info.img : '../' + this.info.img;
+    this.innerImg.src = this.info.img;
     this.innerImg.alt = this.info.type;
     this.modalContent = this.createNode('div', 'modal__content');
     this.modalText = this.createNode('div', 'modal__text');
